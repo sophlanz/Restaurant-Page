@@ -90,7 +90,7 @@ img {
 }
 #nav {
     width:100vw;
-    height:100px;
+    height:80px;
     grid-column:1/4;
     grid-row:1/2;
     display:flex;
@@ -98,6 +98,7 @@ img {
     justify-content: space-around;
     letter-spacing:2px;
     background-color:white;
+    font-weight:100;
     
 }
 /*will be called with javascript. Make nav bar sticky. */
@@ -116,6 +117,7 @@ img {
     width:190px;
     font-size:1.4rem;
     font-weight:100px;
+    cursor:pointer;
 }
 #options {
  
@@ -129,6 +131,10 @@ img {
     padding-bottom:10px;
 }
 #option:hover {
+    border-bottom: #00955e solid 2px;
+}
+/*when tab is selected add green border*/
+#option.active {
     border-bottom: #00955e solid 2px;
 }
 #locations {
@@ -236,6 +242,7 @@ button.email {
     padding:10px;
     font-size:.8rem;
     font-weight:300;
+    cursor: pointer;
 
 }
 #icons {
