@@ -9,17 +9,23 @@
   </head>
   <body>
     <div id = "content">
+    <!--nav / tabs-->
       <div id ="nav"> 
-         <div id = "title"><strong>SUNDAY</strong>/ <i>in</i>/<strong>BARCELONA</strong></div>
+         <div id = "title" class = "tablinks" onclick = 'openTab(event, "home")'><strong>SUNDAY</strong>/ <i>in</i>/<strong>BARCELONA</strong></div>
          <div id = "options">
-           <div id = "option"  ><a href= " ">FAQ</a></div>
-           <div id = "option"><a href= " ">TO GO</a></div>
-           <div id = "option"><a href= " ">MENU</a></div>
-           <div id = "option"><a href= " ">PRESS</a></div>
-           <div id = "option"><a href= " ">GIFT CARDS</a></div>
-           <div id = "option"><a href= " ">RESERVATIONS</a></div>
+           <div id = "option" class = "tablinks" onclick = 'openTab(event, "faq")' ><a href= " ">FAQ</a></div>
+           <div id = "option" class = "tablinks" onclick = 'openTab(event, "togo")' ><a href= " ">TO GO</a></div>
+           <div id = "option" class = "tablinks" onclick = 'openTab(event, "menus")'><a href= " ">MENUS</a></div>
+           <div id = "option" class = "tablinks" onclick = 'openTab(event, "privateevents")'><a href= " ">PRIVATE EVENTS</a></div>
+           <div id = "option" class = "tablinks" onclick = 'openTab(event, "press")'><a href= " ">PRESS</a></div>
+           <div id = "option" class = "tablinks" onclick = 'openTab(event, "giftcards")'><a href= " ">GIFT CARDS</a></div>
+           <div id = "option" class = "tablinks" onclick = 'openTab(event, "togo")'><a href= " ">RESERVATIONS</a></div>
          </div>
       </div>
+
+      <!--tab content-->
+      <!--home-->
+      <div id = "home" class = "tabcontent">
       <div id= "slideShow">
         <img class = "mainPhoto" src = "../images/bkgnd.jpg"    id = "paella">
       </div>
@@ -82,7 +88,23 @@
             <div id = "github">Created By Sophia Lanzendorf <img src = "../images/github.svg"></div>
           </div>
           
-          
+        </div>
+
+        <!-- FAQ--> 
+        <div id= "faq"class = "tabcontent"></div>        
+         <!-- TOGO--> 
+         <div id= "togo"class = "tabcontent"></div> 
+          <!-- MENUS--> 
+          <div id= "menus"class = "tabcontent"></div> 
+           <!-- PRIVATE EVENTS--> 
+           <div id= "privateevents"class = "tabcontent"></div> 
+            <!-- PRESS--> 
+            <div id= "press"class = "tabcontent"></div> 
+             <!-- GIFT CARDS--> 
+             <div id= "giftcards"class = "tabcontent"></div> 
+              <!-- RESERVATIONS--> 
+              <div id= "reservations"class = "tabcontent"></div> 
+
     </div>
   </body>
 </html>
