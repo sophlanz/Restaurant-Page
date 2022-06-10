@@ -42,6 +42,8 @@ body {
     font-weight:lighter;
     display:flex;
     flex-direction:column;
+    padding:0;
+    margin:0;
     
 }
 ol, ul {
@@ -63,7 +65,7 @@ table {
 #slideShow {
     
     grid-column: 1 /4;
-    grid-row:2/3;
+   /* grid-row:2/3;*/
     height: 620px;
     width:100vw;
     overflow:hidden;
@@ -83,10 +85,14 @@ img {
 }
 #content {
     display:grid;
-    grid-template-rows: 85px auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     height:100vh;
     width:100vw;
+   
+}
+#tabcontents {
+    grid-row:2/3;
 }
 #nav {
     width:100vw;
@@ -129,6 +135,7 @@ img {
 #option {
     border-bottom:#00955e transparent 2px;
     padding-bottom:10px;
+    font-size:.7rem;
 }
 #option:hover {
     border-bottom: #00955e solid 2px;
@@ -137,9 +144,12 @@ img {
 #options .tablinksactive {
     border-bottom: #00955e solid 2px;
 }
+#tabContent {
+    grid-row:3/4
+}
 #locations {
     grid-column:1/4;
-    grid-row:3/4;
+    
     margin-top:80px;
     margin-bottom:50px;
     display:flex;
@@ -150,11 +160,11 @@ img {
 #location1, #location2 {
     width:380px;
 }
-h1 {
+ h1 {
     font-size: 3rem;
     
 }
-h1::after {
+#locations h1::after {
     display:block;
     content: "";
     border-top: solid 4px #00955e;
@@ -232,7 +242,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 #footer {
     height:250px;
     text-align:center;
-    grid-row:4/5;
+    grid-row:3/4;
+    
+    
+    
 }
 button.email {
     background-color:#00955e;
@@ -245,6 +258,10 @@ button.email {
     font-weight:300;
     cursor: pointer;
 
+}
+button.email:hover {
+    color: #00955e;
+    background-color:#a7d6f0
 }
 #icons {
     display:flex;
@@ -264,6 +281,43 @@ button.email {
     padding-left:15px;
     font-weight:700;
     cursor:pointer;
+}
+#reserve:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0)
+}
+#explanations {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    width:700px;
+    gap:60px;
+    margin-bottom:100px;
+    letter-spacing:2px;
+    line-height:200%;
+    font-weight:lighter;
     
+}
+#explanations h1 {
+    text-align: center;
+    margin-bottom:20px;
+    font-style:italic;
+    font-size:1.7rem;
+}
+#faqContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nav.nav{
+    display:flex;
+    width:700px;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:60px;
+    margin-bottom: 60px;
+    font-weight:700;
     
 }
