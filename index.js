@@ -1,3 +1,5 @@
+
+
  //nav stickybar 
  window.onscroll = stickyNav();
 function stickyNav() {
@@ -32,3 +34,12 @@ function openTab(event,tabName) {
         event.currentTarget.className += "active";
         
     };
+document.getElementById("title").click();
+
+function jump(explanation) {
+    const value =  document.getElementById(explanation);
+    const yOffset = -80;
+    const y = value.getBoundingClientRect().top + window.pageYOffset + yOffset;
+   
+   window.scrollTo({top:y, behavior:"smooth"});
+};

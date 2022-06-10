@@ -24,6 +24,7 @@
       </div>
 
       <!--tab content-->
+      <div id = "tabContents">
       <!--home-->
       <div id = "home" class = "tabcontent">
       <div id= "slideShow">
@@ -75,35 +76,84 @@
             <button id = "reserve">Reservar</button>
           </div>
           </div>
-          <div id = "footer">
-            <div id = "banner"> 
-              <div id = "icons">
-                <img src = "../images/fb.svg">
-               <img src = "../images/instagram.svg">
-               <img src = "../images/spotify.svg">
-              </div>
-              <div id = "banner-address" onclick= "">CARRER DE MARGARIT 85, BARCELONA 08004 </div>
-              <button class = "email">EMAIL SIGNUP</button>
-          </div>
-            <div id = "github">Created By Sophia Lanzendorf <img src = "../images/github.svg"></div>
-          </div>
-          
+         
         </div>
 
         <!-- FAQ--> 
-        <div id= "faq"class = "tabcontent"></div>        
+        <div id= "faq"class = "tabcontent">
+          <div id = "faqContainer">
+          <div id= "slideShow">
+            <img class = "mainPhoto" src = "../images/faq1.jpg" >
+          </div>
+          <div id = "nav" class="nav">
+            <div id = "option" onclick = 'jump("aboutUs")'>ABOUT US </div>
+            <div id = "option" onclick = 'jump("reservations")'>RESERVATIONS</div>
+            <div id = "option" onclick = 'jump("holidays")'>HOLIDAYS</div>
+            <div id = "option" onclick = 'jump("lostfound")'> LOST & FOUND </div>
+            <div id = "option" onclick = 'jump("receipt")'>RECEIPT REQUESTS</div>
+            </div>
+            <div id = "explanations">
+              <div id = "explanation">
+                <h1 id = "aboutUs" >ABOUT US</h1>
+                <p>Best restaurant in Barcelona for all of your Spanish food must haves.</p>
+              </div>
+              <div id = "explanation">
+                <h1 id = "reservations">RESERVATIONS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula vestibulum lorem sit amet ultricies. Maecenas auctor arcu felis, vitae bibendum est varius non. Donec eros magna, accumsan non nulla eget, posuere accumsan enim. </p>
+              </div>
+              <div id = "explanation">
+                <h1 id = "holidays">HOLIDAYS</h1>
+                <p>Nam vitae luctus magna. Nam id nisl ut orci dignissim sodales. Sed at ante odio. Aenean placerat arcu vitae euismod ullamcorper. Phasellus eget felis a orci pharetra pretium eget vestibulum tellus. Phasellus odio neque, scelerisque in pretium id, luctus vel nulla. </p>
+              </div>
+              <div id = "explanation">
+                <h1 id ="lostfound">LOST & FOUND </h1>
+                <p>Mauris accumsan ligula orci, sit amet consequat nulla semper vel. Aliquam faucibus, dui id varius semper, nulla magna bibendum nulla, sed vestibulum nisi mi et diam. Mauris porttitor mollis dui, at posuere dui porta eu.</p>
+              </div>
+              <div id = "explanation">
+                <h1 id = "receipt">RECEIPT REQUESTS</h1>
+                <p>Duis laoreet metus non massa fermentum, ut interdum dolor facilisis. Phasellus a ipsum eu augue placerat efficitur. Curabitur vehicula, lacus ac venenatis vestibulum, justo nunc varius mi, interdum varius tortor enim at justo. Pellentesque ultrices nibh at arcu iaculis, vitae pretium arcu dictum. </p>
+              </div>
+            </div>
+          </div> 
+          </div>
+          
+      
+               
          <!-- TOGO--> 
          <div id= "togo"class = "tabcontent"></div> 
           <!-- MENUS--> 
-          <div id= "menus"class = "tabcontent"></div> 
+          <div id= "menus"class = "tabcontent">
+            <div id= "slideShow">
+              <img class = "mainPhoto" src = "../images/menu1.jpg"    >
+            </div>
+          </div> 
            <!-- PRIVATE EVENTS--> 
-           <div id= "privateevents"class = "tabcontent"></div> 
+           <div id= "privateevents"class = "tabcontent">
+            <div id= "slideShow">
+              <img class = "mainPhoto" src = "../images/privateevents2.jpg"    >
+            </div>
+           </div> 
             <!-- PRESS--> 
             <div id= "press"class = "tabcontent"></div> 
              <!-- GIFT CARDS--> 
              <div id= "giftcards"class = "tabcontent"></div> 
               <!-- RESERVATIONS--> 
               <div id= "reservations"class = "tabcontent"></div> 
+            </div>
+
+    <div id = "footer">
+                <div id = "banner"> 
+                  <div id = "icons">
+                    <img src = "../images/fb.svg">
+                   <img src = "../images/instagram.svg">
+                   <img src = "../images/spotify.svg">
+                  </div>
+                  <div id = "banner-address" onclick= "">CARRER DE MARGARIT 85, BARCELONA 08004 </div>
+                  <button class = "email">EMAIL SIGNUP</button>
+              </div>
+                <div id = "github">Created By Sophia Lanzendorf <img src = "../images/github.svg"></div>
+    </div>
+              
 
     </div>
   </body>
