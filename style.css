@@ -134,7 +134,7 @@ img {
     border-bottom: #00955e solid 2px;
 }
 /*when tab is selected add green border*/
-#option.active {
+#options .tablinksactive {
     border-bottom: #00955e solid 2px;
 }
 #locations {
@@ -172,6 +172,7 @@ h1::after {
     letter-spacing:2px;
     
 }
+
 
 #hour {
     display:flex;

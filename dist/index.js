@@ -13,22 +13,22 @@ function stickyNav() {
             nav.classList.remove('sticky');
         }
     };
-    function openTab(event,option) {
+    
+function openTab(event,tabName) {
         
-        const tabContent = document.getElementsByClassName('tabcontent');
+        const tabcontent = document.getElementsByClassName('tabcontent');
         //hide non-selected tabs
-        for (i=0; i<tabContent.length;i++) {
-            tabContent[i].style.display = "none";
+        for (let i=0; i<tabcontent.length;i++) {
+            tabcontent[i].style.display = "none";
         }
         //monitor which tab is showing by removing the active classes of the links
-        const tabLinks = document.getElementsByClassName('tablinks');
-        for (i=0; i<tabLinks.length;i++) {
-            tabLinks[i].className = tabLinks[i].className.replace('active', "");
+        const tablinks = document.getElementsByClassName('tablinksactive');
+        for (let i=0; i<tablinks.length;i++) {
+            tablinks[i].className = tablinks[i].className.replace("active", "");
         }
         //show the current tap
-        document.getElementById(option).style.display = "block";
+       document.getElementById(tabName).style.display = "block";
         //add an active class to it's tab link
         event.currentTarget.className += "active";
-    }
-//call the homepage
-document.getElementById('title').click();
+        
+    };
