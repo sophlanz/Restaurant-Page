@@ -417,3 +417,34 @@ h1#tea, h1#softdrink {
     font-weight:800;
     font-size:2rem;
 }
+/*private events*/
+
+#eventContent {
+    margin-left:300px;
+    margin-right:300px;
+    text-align:center;
+    line-height:200%;
+    letter-spacing:2px;
+}
+h1#privateEvents {
+    margin-top:70px;
+    margin-bottom:50px;
+
+}
+button#events {
+    background-color:#00955e;
+    color:white;
+    border:none;
+    height:40px;
+    width:190px;
+    margin-top:40px;
+    margin-bottom: 80px;
+    letter-spacing:2px;
+    font-size:.7rem;
+    margin-right:20px;
+}
+button#events:hover {
+    color: #00955e;
+    background-color:#a7d6f0;
+
+}
