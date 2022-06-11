@@ -117,16 +117,340 @@
           </div> 
           </div>
           
-      
-               
          <!-- TOGO--> 
          <div id= "togo"class = "tabcontent"></div> 
           <!-- MENUS--> 
           <div id= "menus"class = "tabcontent">
-            <div id= "slideShow">
-              <img class = "mainPhoto" src = "../images/menu1.jpg"    >
+            <div id = "menusContainer">
+              <div id= "slideShow">
+                <img class = "mainPhoto" src = "../images/menu1.jpg"    >
+              </div>
+                <div id = "nav" class= "nav">
+                  <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"brunchMenu")'>BRUNCH </div>
+                  <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"middayMenu")'>MIDDAY </div>
+                  <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"dinnerMenu")'>DINNER </div>
+                  <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"cocktailMenu")'>BRUNCH COCKTAILS</div>
+                  <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"wineMenu")'>WINE</div>
+                  <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"dessertMenu")'>DESSERT </div>
+                  <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"coffeeMenu")'>COFFEE/TEA </div>
+                </div>
+                <div id= "explanations">
+                  <div id = "brunchMenu" class="menuOptions">
+                    <div id = "brunchSelection">
+                    <h1 id="brunch">BRUNCH</h1>
+                    <div id="menuItem">
+                      <p id="item">AVOCADO TOAST / 10</p>
+                      <p id= "ingredient">Toasted Sourdough, Calabrian Chili, Piparras, Mache</p>
+                      <p id = "allergy">wheat</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">SUNNY PANCAKES / 15</p>
+                      <p id= "ingredient">Hazlenut Maple Praline, Brown Butter</p>
+                      <p id = "allergy">dairy, wheat</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">BISCUITS AND GRAVY / 12</p>
+                      <p id= "ingredient">Cheddar Biscuits, Poached Eggs, Breakfast Sausage Gravy, Hot Sauce</p>
+                      <p id = "allergy">dairy,egg,wehat</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">TORRIJAS / 15</p>
+                      <p id= "ingredient">Sourdough, Honey, Maple Syrup, Cinnamon</p>
+                      <p id = "allergy">dairy,egg,wheat</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">PAN CON TOMATE / 10</p>
+                      <p id= "ingredient">Toasted Sourdough, Tomatoe, Olive Oil</p>
+                      <p id = "allergy">wheat</p>
+                    </div>
+                  </div>
+          
+                  
+                  <div id = "sandwiches">
+                    <h1 id ="sandwiches">SANDWICHES</h1>
+                    <p id="glutenFree">substitute gluten-free bread +2</p>
+                    <div id="menuItem">
+                      <p id="item">EGG & CHEESE SANDWICH / 13</p>
+                      <p id= "ingredient">Gochujang Aiolo, Crispy Potatoes, Cheddar, Brioche</p>
+                      <p id = "additions">[   add sausage, bacon, or avocado +5   ]</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">FRIED CHICKEN SANDWICH/ 15</p>
+                      <p id= "ingredient">Chicken Breast, Shredden Cabbage, B&B Pickles, Kewpie Mayo, Hot Honey</p>
+                      <p id = "additions">[   add bacon +5, add avocado +3   ]</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">EGGS BENEDICT/ 14</p>
+                      <p id= "ingredient">English muffin, Ham, Poached Eggs, Hollondaise Sauce</p>
+                      <p id = "additions">[   add salmon +7, add spinach +3   ]</p>
+                    </div>
+                  </div>
+                  
+                  <div id="sides">
+                    <h1 id="sides">SIDES</h1>
+                    <div id="menuItem">
+                      <p id="item">Patatas Bravas/ 7</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">Calamari / 10</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">Bacon / 8</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">Breakfast Sausage / 8</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">Hash Browns / 9</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">Toast and Local Jam / 7</p>
+                    </div>
+                  </div>
+                </div>
+                  
+                  <div id = "middayMenu" class = "menuOptions">
+                    <h1 id= "midday">MIDDAY</h1>
+                    <div id="menuItem">
+                      <p id="item">Oysters / 23 [half-dozen]</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">PULPO A LA GALLEGA / 15</p>
+                      <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
+                      <p id = "allergy">fish</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">SEAFOOD / 20</p>
+                      <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
+                      <p id = "allergy">fish</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> SEAFOOD PAELLA / 25</p>
+                      <p id= "ingredient">Rice, Seafood</p>
+                      <p id = "allergy">wheat, fish</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> ARROZ NEGRO / 20</p>
+                      <p id= "ingredient">Black Rice, Seafood</p>
+                      <p id = "allergy">wheat, fish</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">WARM GRAIN BOWL/ 15</p>
+                      <p id= "ingredient">Brown & Wild Ride, Grilled Snap Peas, Spring Radishes, Cucumbers, Pepita Romesco, Avocado, 6 Minute Egg</p>
+                      <p id = "additions">[   Add Smoked Salmon +8, Grilled or Friend Chicken +8   ]</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">FRIED CHICKEN SANDWICH/ 19 [   add fries + 5   ]</p>
+                      <p id= "ingredient">Chicken Breast, Shredden Cabbage, B&B Pickles, Kewpie Mayo, Hot Honey</p>
+                      <p id = "allergy">wheat, fish, egg, dairy</p>
+                      <p id = "additions">[   add bacon +5, add avocado +3   ]</p>
+                    </div>
+                    </div>
+                    <div id = "dinnerMenu" class = "menuOptions">
+                    <h1 id = "starters">STARTERS</h1>
+                    <div id="menuItem">
+                      <p id="item"> PATATAS BRAVAS / 7  </p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">CHIPIRONES / 10</p>
+                      <p id= "ingredient">Calamari</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">PADR´ON PEPPERS / 7</p>
+                      <p id= "ingredient">Green peppers</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">MUSHROOMS / 10</p>
+                      <p id= "ingredient">Olive Oil, Garlic</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">TORTILLA ESPA˜NOLA / 10</p>
+                      <p id= "ingredient">Potato Tortilla</p>
+                    </div>
+                    <h1 id = "dishes">DISHES</h1>
+                    <div id="menuItem">
+                      <p id="item">PULPO A LA GALLEGA / 15</p>
+                      <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
+                      <p id = "allergy">fish</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">SEAFOOD / 20</p>
+                      <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
+                      <p id = "allergy">fish</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> SEAFOOD PAELLA / 25</p>
+                      <p id= "ingredient">Rice, Seafood</p>
+                      <p id = "allergy">wheat, fish</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> ARROZ NEGRO / 20</p>
+                      <p id= "ingredient">Black Rice, Seafood</p>
+                      <p id = "allergy">wheat, fish</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">WARM GRAIN BOWL/ 15</p>
+                      <p id= "ingredient">Brown & Wild Ride, Grilled Snap Peas, Spring Radishes, Cucumbers, Pepita Romesco, Avocado, 6 Minute Egg</p>
+                      <p id = "additions">[   Add Smoked Salmon +8, Grilled or Friend Chicken +8   ]</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item">FRIED CHICKEN SANDWICH/ 19 [   add fries + 5   ]</p>
+                      <p id= "ingredient">Chicken Breast, Shredden Cabbage, B&B Pickles, Kewpie Mayo, Hot Honey</p>
+                      <p id = "allergy">wheat, fish, egg, dairy</p>
+                      <p id = "additions">[   add bacon +5, add avocado +3   ]</p>
+                    </div>
+                    <h1 id = "sidesDinner">SIDES</h1>
+                    <div id="menuItem">
+                      <p id="item"> PATATAS BRAVAS / 7  </p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> SIDE SALAD / 7</p>
+                      <p id= "ingredient">Italian Dressing</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> GRILLED VEGGIES / 9</p>
+                      <p id= "ingredient">Mushrooms, Peppers, Onions</p>
+                    </div>
+                    </div>
+                    <div id = "cocktailMenu" class = "menuOptions">
+                     
+                        <h1 id="cocktails">BRUNCH COCKTAILS</h1>
+                        <div id="menuItem">
+                          <p id="item"> CHAMPAGNE PROBLEMS / 15</p>
+                          <p id= "ingredient">Genepy, Strawberry, Lemon, Cava | Spritz</p>
+                        </div>
+                        <div id="menuItem">
+                          <p id="item"> SUNDAY BLOODY/ 16</p>
+                          <p id= "ingredient">Mezcal, Tomato, Sambal, Horseradish, Lemon | Rocks</p>
+                        </div>
+                        <div id="menuItem">
+                          <p id="item"> SNAKE CHARMER / 16</p>
+                          <p id= "ingredient">Mezcal, Pear, Celery, Pandan, Mustard Seed, Soda | Rocks</p>
+                        </div>
+                        <div id="menuItem">
+                          <p id="item"> HONEYBEAR ON HOLIDAY / 16</p>
+                          <p id= "ingredient">Rum, Montenegro, Apricot, Pineapple, Honey, | Pepple Ice</p>
+                        </div>
+                      </div>
+                    
+                 
+                    <div id = "wineMenu" class = "menuOptions">
+                      <h1 id= "bubbles">BUBBLES</h1>
+                      <div id="menuItem">
+                        <p id="item"> Pinot Noir, Gruet, Methode Champenoise, New Mexico, Brut Rose NV, organic 14 / 56</p>
+                      </div>
+                      <h1 id= "redwine">VINO TINTO</h1>
+                      <div id="menuItem">
+                        <p id="item"> Sangiovese / Merlot / Cabarnet Sauvignon, Tolaini, Al Passo, Toscana, IGT, Italy 2018, organic 15 / 60</p>
+                      </div>
+                      <div id="menuItem">
+                        <p id="item"> Alicante Bouschet / Mencia, César Márquez, "Las Firmas," Bierzo, Spain 2017 / 80</p>
+                      </div>
+                      <h1 id= "whitewine">VINO BLANCO</h1>
+                      <div id="menuItem">
+                        <p id="item"> Sauvignon Blanc, Clotilde Davenne, Saint-Bris, Burgandy, France 2020, organic 15 / 60</p>
+                      </div>
+                      <div id="menuItem">
+                        <p id="item"> Palomino, Vina Callejuela, La Andalucia, Spain 2018, organic / 72</p>
+                      </div>
+                      <div id="menuItem">
+                        <p id="item">Pinot Bianco, Kellerei-Cantina Adrian, Trentino-Alto Adige, Italy 2020 13 / 52</p>
+                      </div>
+                    </div>
+                    <div id = "dessertMenu" class = "menuOptions">
+                    <h1 id = "dessert">DESSERT</h1>
+                    <div id="menuItem">
+                      <p id="item"> THE SUNDAY SUNDAE / 12</p>
+                      <p id= "ingredient">Blueberry and Chocolate Soft Serve, Hazlenut Water, All The Goodies & A Cherry On Top</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> S'MORES SOFT SERVE / 9</p>
+                      <p id= "ingredient">Chocolate, Feuilletine, Toasted Meringue</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> TORRIJAS / 10</p>
+                      <p id= "ingredient">Sourdough, Honey, Maple Syrup, Powdered Sugar</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> MANGO STICKY RICE / 10</p>
+                      <p id= "ingredient">Pandan Sticky Rice, Mango, Condensed Milk</p>
+                    </div>
+                    <h1 id= "dessertWine">DESSERT WINES</h1>
+                    <div id="menuItem">
+                      <p id="item"> [   MACABEAU   ] RIVESALTES AMBR´E / 10</p>
+                      <p id= "ingredient">Domaine De Rancy / Roussillon, France</p>
+                    </div>
+                    <div id="menuItem">
+                      <p id="item"> PINEAU DE CHARENTES / 12</p>
+                      <p id= "ingredient">Pierre Ferrand / Cognac, France</p>
+                    </div>
+                    </div>
+                    <div id = "coffeeMenu" class = "menuOptions">
+                      <h1 id = "coffee">COFFEE</h1>
+                      <p id = "blend" >PARLOR / Prospect Blend</p>
+                      <div id = "coffeeSelection">
+                        <div id="menuItem">
+                          <p id="item"> ESPRESSO [ double ] / 4</p>
+                        </div>
+                        <div id="menuItem">
+                          <p id="item"> DRIP COFFEE / 5</p>
+                        </div>
+                        <div id="menuItem">
+                          <p id="item"> OAT MOCHA / 7</p>
+                          <p id="ingredient">Cocoa, Cinnamon, [ dairy-free ] </p>
+                        </div>
+                        <div id="menuItem">
+                          <p id="item">LATTE or CAPPUCCINO/ 6</p>
+                        </div>
+                        <div id="menuItem">
+                          <p id="item"> COLD BREW / 6</p>
+                        </div>
+                        <div id="menuItem">
+                          <p id="item">HOT CHOCOLATE / 5</p>
+                          <p id="ingredient">Cocoa, Cinnamon, [ dairy-free ] </p>
+                        </div>
+                    </div>
+                    <h1 id = "tea">TEA</h1>
+                    <div id = "teaSelection">
+                      <div id="menuItem">
+                        <p id="item">MATCHA  /  KETTL  / 5</p>
+                        <p id="ingredient">Hot or Iced  /  Latte +2 </p>
+                      </div>
+                      <div id="menuItem">
+                        <p id="item">TUMERIC SPICED CHAI  /  CHAMELLIA  </p>
+                        <p id="ingredient">Hot or Iced  /  Latte +2 </p>
+                      </div>
+                    </div>
+                    <h1 id = "softdrink">SOFT BEVERAGES</h1>
+                    <div id = "softdrinkSelection">
+                      <div id="menuItem">
+                        <p id="item">ICED TEA  /  IN PURSUIT OF TEA  /  5</p>
+                        <p id="ingredient">Earl Grey </p>
+                        <p id="ingredient">Scarlet Glow [  hibiscus blend  ] </p>
+                      </div>
+                      <div id="menuItem">
+                        <p id="item">ARNOLD PALMER  /  7</p>
+                        <p id="ingredient">Earl Grey + Lemonade </p>
+                      </div>
+                      <div id="menuItem">
+                        <p id="item">PATTY BERG  /  7</p>
+                        <p id="ingredient">Scarlet Glow + Grapefruit </p>
+                      </div>
+                      <div id="menuItem">
+                        <p id="item">FEVER TREE  /  6</p>
+                        <p id="ingredient">Tonic</p>
+                        <p id="ingredient">Cola</p>
+                        <p id="ingredient">Ginger Beer</p>
+                      </div>
+                      
+                    </div>
+                    </div>
+                  </div>
+              </div>
             </div>
-          </div> 
+          
+       
+
            <!-- PRIVATE EVENTS--> 
            <div id= "privateevents"class = "tabcontent">
             <div id= "slideShow">
