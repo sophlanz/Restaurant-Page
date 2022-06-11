@@ -285,12 +285,13 @@ button.email:hover {
 #reserve:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0)
 }
+/*FAQ*/
 #explanations {
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content:center;
-    align-items:center;
+    
     width:700px;
     gap:60px;
     margin-bottom:100px;
@@ -305,6 +306,7 @@ button.email:hover {
     font-style:italic;
     font-size:1.7rem;
 }
+
 #faqContainer {
     display:flex;
     flex-direction: column;
@@ -319,5 +321,99 @@ button.email:hover {
     margin-top:60px;
     margin-bottom: 60px;
     font-weight:700;
+  
+}
+/*menus*/
+#menusContainer {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+h1#brunch,h1#sandwiches,h1#sides, h1#midday, h1#starters, 
+h1#dishes, h1#sidesDinner, h1#cocktails, h1#bubbles, h1#redwine
+, h1#whitewine, h1#dessert, h1#dessertWine{
+    text-align:left;
+    font-style:normal;
+    font-weight:800;
+    font-size:2rem;
+  
+ 
+}
+h1#brunch,h1#sides{
+    margin-bottom:40px;
+}
+#menuItem {
+    display:flex;
+    flex-direction:column;
+    margin-bottom:40px;
+    line-height:170%;
+    letter-spacing:3px;
+ 
+}
+p#allergy {
+    font-size:.7rem;
+}
+#additions {
+    font-size:.8rem;
+}
+#glutenFree {
+    font-size:.8rem;
+    margin-left:170px;
+    margin-top:0px;
+    margin-bottom:40px;
+}
+h1#sandwiches {
+    margin-bottom:0px;
+    margin-top:120px;
+}
+h1#sides {
+    margin-top:120px;
+}
+.menuLinksactive {
+    border-bottom: #00955e solid 2px;
+}
+/*Dinner menu*/
+h1#sidesDinner, h1#dishes {
+    margin-top:100px;
+}
+/*cocktails*/
+h1#cocktails {
+    margin-bottom:60px;
+}
+/*wine*/ 
+h1#redwine, h1#whitewine {
+    margin-top:100px;
+}
+/*Coffee*/
+#coffeeSelection{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    height:240px;
+    font-size:.9rem;
     
+}
+#softdrinkSelection {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    height:300px;
+    font-size:.9rem;
+    
+}
+#teaSelection {
+    font-size:.9rem;
+}
+h1#coffee {
+    margin-bottom:0px;
+}
+#blend {
+    margin-bottom:10px;
+}
+h1#coffee,
+h1#tea, h1#softdrink {
+    text-align:left;
+    font-style:italic;
+    font-weight:800;
+    font-size:2rem;
 }

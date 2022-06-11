@@ -43,3 +43,21 @@ function jump(explanation) {
    
    window.scrollTo({top:y, behavior:"smooth"});
 };
+function openMenu(event, desiredMenu){
+    //get the menu options content
+    const menuOptions = document.getElementsByClassName('menuOptions');
+    for(let i=0; i<menuOptions.length;i++) {
+        menuOptions[i].style.display = "none";
+    }
+    //look to see if the active class has been added, and remove it
+    const active = document.getElementsByClassName('menuLinksactive');
+    for(let i=0; i<active.length;i++){
+        active[i].className = active[i].className.replace('active', '');
+    }
+    //display the current target through display block
+    document.getElementById(desiredMenu).style.display = "block";
+    //add the active class
+    event.currentTarget.className += "active";
+
+}
+document.getElementById('brunchMenu').click();
