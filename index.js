@@ -72,3 +72,4 @@ function closeModal(){
     modal.style.display= "none"
     
 }
+openMenu(event,"brunchMenu")();
