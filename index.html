@@ -14,12 +14,9 @@
          <div id = "title" class = "tablinks" onclick = 'openTab(event, "home")'><strong>SUNDAY</strong>/ <i>in</i>/<strong>BARCELONA</strong></div>
          <div id = "options">
            <div id = "option" class = "tablinks" onclick = 'openTab(event, "faq")' >FAQ</div>
-           <div id = "option" class = "tablinks" onclick = 'openTab(event, "togo")' >TO GO</div>
            <div id = "option" class = "tablinks" onclick = 'openTab(event, "menus")'>MENUS</div>
            <div id = "option" class = "tablinks" onclick = 'openTab(event, "privateevents")'>PRIVATE EVENTS</div>
-           <div id = "option" class = "tablinks" onclick = 'openTab(event, "press")'>PRESS</div>
-           <div id = "option" class = "tablinks" onclick = 'openTab(event, "giftcards")'>GIFT CARDS</div>
-           <div id = "option" class = "tablinks" onclick = 'openTab(event, "togo")'>RESERVATIONS</div>
+           <div id = "option" class = "reserveModal" onclick = 'openModal()'>RESERVATIONS</div>
          </div>
       </div>
 
@@ -28,7 +25,7 @@
       <!--home-->
       <div id = "home" class = "tabcontent">
       <div id= "slideShow">
-        <img class = "mainPhoto" src = "../images/bkgnd.jpg"    id = "paella">
+        <img class = "mainPhoto" src = "../images/bkgnd.png"    id = "paella">
       </div>
       <div id = "locations">
           <div id = "graphic"> <img src = "../images/Zebra2.svg" ></div>
@@ -51,7 +48,7 @@
                   <p id = "days">Wednesday - Sunday: </p>
                    <p id = "time">6:00 PM - 10:00 PM</p>
               </div>
-              <button id = "reserve">Reservar</button>
+              <button id = "reserve"  onclick = 'openModal()'>Reservar</button>
           </div>
           <div id= "location2">
             <h1>Poble Sec</h1>
@@ -73,7 +70,7 @@
                   <p id = "days">Friday - Saturday: </p>
                   <p id = "time">6:00 PM - 11:00 PM</p>
             </div>
-            <button id = "reserve">Reservar</button>
+            <button id = "reserve"  onclick = 'openModal()'>Reservar</button>
           </div>
           </div>
          
@@ -123,7 +120,7 @@
           <div id= "menus"class = "tabcontent">
             <div id = "menusContainer">
               <div id= "slideShow">
-                <img class = "mainPhoto" src = "../images/menu1.jpg"    >
+                <img class = "mainPhoto" src = "../images/menu1.png"    >
               </div>
                 <div id = "nav" class= "nav">
                   <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"brunchMenu")'>BRUNCH </div>
@@ -468,17 +465,40 @@
              <!-- GIFT CARDS--> 
              <div id= "giftcards"class = "tabcontent"></div> 
               <!-- RESERVATIONS--> 
-              <div id= "reservations"class = "tabcontent"></div> 
+              <div id= "modalReservations"class = "tabcontent">
+                <span class ="close" onclick= 'closeModal()'>&times;</span>
+                <div id = "modalContent">
+                  <h1 id = "reservations">RESERVATIONS</h1>
+                  <form action="">
+                  
+                  <input type = "text" id="name"name= "name" placeholder = "First and Last Name">
+                  <input type = "number" id ="phone" name= "phone" placeholder = "Phone Number">
+                    <select name = "numberPeople" id="numberPeople">
+                    <option class = "placeholder" value = "" disabled selected>Number of People</option>
+                    <option value = "1">1 Person</option>
+                    <option value = "2">2 People</option>
+                    <option value = "3">3 People</option>
+                    <option value = "4">4 People</option>
+                    <option value = "5">5 People</option>
+                    <option value = "6">6 People</option>
+                    <option value = "7">7+ People</option>
+                    </select>
+                  <input type= "text" id = "date" placeholder= "Date" onfocus="(this.type='date')">
+                </form>
+                <input type = "submit" id="tableButton" value = "FIND A TABLE">
+                </div>
+              </div> 
+
             </div>
 
     <div id = "footer">
                 <div id = "banner"> 
                   <div id = "icons">
-                    <img src = "../images/fb.svg">
-                   <img src = "../images/instagram.svg">
-                   <img src = "../images/spotify.svg">
+                    <p><a href= "https://www.facebook.com/" target="_blank"><img src = "../images/fb.svg" ></a></p>
+                  <p><a href = "https://www.instagram.com/" target="_blank"> <img src = "../images/instagram.svg"></a></p>
+                  <p><a href = "https://www.spotify.com/" target="_blank"><img src = "../images/spotify.svg"></a></p>
                   </div>
-                  <div id = "banner-address" onclick= "">CARRER DE MARGARIT 85, BARCELONA 08004 </div>
+                  <div id = "banner-address" onclick= ""><a target="_blank" href = " https://www.google.com/maps/dir/41.3907372,2.1745004/Montju%C3%AFc+Park/@41.3802703,2.1473562,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12a4a345edc4bd0f:0x4145c88af7bc5784!2m2!1d2.1618564!2d41.3693754">CARRER DE MARGARIT 85, BARCELONA 08004</a> </div>
                   <button class = "email">EMAIL SIGNUP</button>
               </div>
                 <div id = "github">Created By Sophia Lanzendorf <img src = "../images/github.svg"></div>
