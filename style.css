@@ -63,19 +63,27 @@ table {
 }
 
 #slideShow {
-    
+    display:flex;
+    justify-content: center;
+    align-items:center;
     grid-column: 1 /4;
    /* grid-row:2/3;*/
-    height: 620px;
+    height: 700px;
     width:100vw;
     overflow:hidden;
+    
 }
 img.mainPhoto {
     width:100vw;
+    object-fit:cover;
     height: auto;
+    min-height:100%;
+    min-width:100%;
+    flex-shrink:0;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
+   
 }
 img {
     height: auto;
@@ -447,4 +455,84 @@ button#events:hover {
     color: #00955e;
     background-color:#a7d6f0;
 
+}
+/*modal/reservations*/
+#modalReservations {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:white; /* Fallback color */
+    overflow:hidden;
+     
+}
+/* The Close Button */
+.close {
+    color: #00955e;
+    float: right;
+    font-size: 80px;
+    font-weight: lighter;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color:#00955e71;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  h1#reservations {
+    color:#00955e;
+    border-bottom: solid #00955e 2px; 
+    padding:80px;
+    margin-bottom:40px;
+    font-size:1.2rem;
+  }
+  #modalContent {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width:800px;
+    overflow:hidden;
+    margin-top:0px;
+  }
+  #numberPeople, #date, #name, #phone {
+      width:800px;
+      height:50px;
+      margin-bottom:20px;
+      
+  }
+  #numberPeople {
+      width:808px;
+  }
+  select {
+    color: #999;
+    font-family:sans-serif;
+    letter-spacing:2px;
+}
+::placeholder {
+    color:#999;
+    font-family:sans-serif;
+    letter-spacing:2px;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity:1;
+    -webkit-appearance: none;
+}
+#tableButton {
+    color:white;
+    background-color:black;
+    height:50px;
+    letter-spacing:2px;
+    padding-left:10px;
+    padding-right:10px;
 }

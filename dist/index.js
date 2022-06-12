@@ -1,6 +1,4 @@
-
-
- //nav stickybar 
+//nav stickybar 
  window.onscroll = stickyNav();
 function stickyNav() {
     //get the bar
@@ -15,7 +13,7 @@ function stickyNav() {
             nav.classList.remove('sticky');
         }
     };
-    
+//Open tabs from main page
 function openTab(event,tabName) {
         
         const tabcontent = document.getElementsByClassName('tabcontent');
@@ -35,7 +33,7 @@ function openTab(event,tabName) {
         
     };
 document.getElementById("title").click();
-
+//Jump in the FAQ page the various sections
 function jump(explanation) {
     const value =  document.getElementById(explanation);
     const yOffset = -80;
@@ -43,6 +41,7 @@ function jump(explanation) {
    
    window.scrollTo({top:y, behavior:"smooth"});
 };
+//tab between the menus
 function openMenu(event, desiredMenu){
     //get the menu options content
     const menuOptions = document.getElementsByClassName('menuOptions');
@@ -61,3 +60,15 @@ function openMenu(event, desiredMenu){
 
 }
 document.getElementById('brunchMenu').click();
+
+//Modal for reservation
+function openModal (){
+    const modal = document.getElementById('modalReservations');
+   //open the modal
+   modal.style.display= "block";
+}
+function closeModal(){
+    const modal = document.getElementById('modalReservations');
+    modal.style.display= "none"
+    
+}
