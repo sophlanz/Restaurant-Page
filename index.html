@@ -23,106 +23,101 @@
       <!--tab content-->
       <div id = "tabContents">
       <!--home-->
-      <div id = "home" class = "tabcontent">
-      <div id= "slideShow">
-        <img class = "mainPhoto" src = "./images/bkgnd.png"    id = "paella">
-      </div>
-      <div id = "locations">
-          <div id = "graphic"> <img src = "./images/Zebra2.svg" ></div>
-          <div id = "location1">
-              <h1>Montjuïc</h1>
-              <p id = "address">Carrer de Margarit 85, Barcelona 08004</p>
-              <div id = "hour">
-                  <h2 id = "meal">BRUNCH /</h2>
-                  <p id = "days">Monday - Sunday: </p>
-                   <p id = "time">10:00 AM - 4:30 PM</p>
+          <div id = "home" class = "tabcontent">
+              <div id= "slideShow">
+              <img class = "mainPhoto" src = "./images/bkgnd.jpg"    id = "paella">
               </div>
-              <div id = "hour">
-                <h2 id = "meal">MIDDAY /</h2>
-                <p id = "days">[Happy Hour : Wednesday to Friday] </p>
-                  <p id = "days">Wednesday - Sunday: </p>
-                   <p id = "time">4:30 PM - 6:00 PM</p>
+              <div id = "locations">
+                  <div id = "graphic"> <img src = "./images/Zebra2.svg" ></div>
+                  <div id = "location1">
+                      <h1>Montjuïc</h1>
+                      <p id = "address">Carrer de Margarit 85, Barcelona 08004</p>
+                      <div id = "hour">
+                          <h2 id = "meal">BRUNCH /</h2>
+                          <p id = "days">Monday - Sunday: </p>
+                          <p id = "time">10:00 AM - 4:30 PM</p>
+                      </div>
+                      <div id = "hour">
+                          <h2 id = "meal">MIDDAY /</h2>
+                          <p id = "days">[Happy Hour : Wednesday to Friday] </p>
+                          <p id = "days">Wednesday - Sunday: </p>
+                          <p id = "time">4:30 PM - 6:00 PM</p>
+                      </div>
+                      <div id = "hour">
+                          <h2 id = "meal">DINNER /</h2>
+                          <p id = "days">Wednesday - Sunday: </p>
+                          <p id = "time">6:00 PM - 10:00 PM</p>
+                      </div>
+                      <button id = "reserve"  onclick = 'openModal()'>Reservar</button>
+                  </div>
+                  <div id= "location2">
+                      <h1>Poble Sec</h1>
+                      <p id = "address">Passeig de Montjuïc 28, Barcelona 08005</p>
+                      <div id = "hour">
+                          <h2 id = "meal">BRUNCH /</h2>
+                          <p id = "days">Monday - Sunday: </p>
+                          <p id = "time">9:30 AM - 4:30 PM</p>
+                      </div>
+                      <div id = "hour">
+                          <h2 id = "meal">MIDDAY /</h2>
+                          <p id = "days">Monday - Sunday: </p>
+                          <p id = "time">4:30 PM - 6:00 PM</p>
+                      </div>
+                      <div id = "hour">
+                          <h2 id = "meal">DINNER /</h2>
+                          <p id = "days">Sunday - Thursday: </p>
+                          <p id = "time">6:00 PM - 10:00 PM</p>
+                          <p id = "days">Friday - Saturday: </p>
+                          <p id = "time">6:00 PM - 11:00 PM</p>
+                      </div>
+                      <button id = "reserve"  onclick = 'openModal()'>Reservar</button>
+                  </div>
               </div>
-              <div id = "hour">
-                <h2 id = "meal">DINNER /</h2>
-                  <p id = "days">Wednesday - Sunday: </p>
-                   <p id = "time">6:00 PM - 10:00 PM</p>
-              </div>
-              <button id = "reserve"  onclick = 'openModal()'>Reservar</button>
           </div>
-          <div id= "location2">
-            <h1>Poble Sec</h1>
-            <p id = "address">Passeig de Montjuïc 28, Barcelona 08005</p>
-            <div id = "hour">
-              <h2 id = "meal">BRUNCH /</h2>
-              <p id = "days">Monday - Sunday: </p>
-               <p id = "time">9:30 AM - 4:30 PM</p>
-            </div>
-            <div id = "hour">
-              <h2 id = "meal">MIDDAY /</h2>
-                  <p id = "days">Monday - Sunday: </p>
-                   <p id = "time">4:30 PM - 6:00 PM</p>
-            </div>
-            <div id = "hour">
-                  <h2 id = "meal">DINNER /</h2>
-                  <p id = "days">Sunday - Thursday: </p>
-                  <p id = "time">6:00 PM - 10:00 PM</p>
-                  <p id = "days">Friday - Saturday: </p>
-                  <p id = "time">6:00 PM - 11:00 PM</p>
-            </div>
-            <button id = "reserve"  onclick = 'openModal()'>Reservar</button>
-          </div>
-          </div>
-         
-        </div>
-
         <!-- FAQ--> 
-        <div id= "faq"class = "tabcontent">
-          <div id = "faqContainer">
-          <div id= "slideShow">
-            <img class = "mainPhoto" src = "./images/faq1.png" >
+          <div id= "faq"class = "tabcontent">
+              <div id = "faqContainer">
+                  <div id= "slideShow">
+                      <img class = "mainPhoto" src = "./images/faq1.jpg" >
+                  </div>
+                  <div id = "nav" class="nav">
+                      <div id = "option" onclick = 'jump("aboutUs")'>ABOUT US </div>
+                      <div id = "option" onclick = 'jump("reservation")'>RESERVATIONS</div>
+                      <div id = "option" onclick = 'jump("holidays")'>HOLIDAYS</div>
+                      <div id = "option" onclick = 'jump("lostfound")'> LOST & FOUND </div>
+                      <div id = "option" onclick = 'jump("receipt")'>RECEIPT REQUESTS</div>
+                  </div>
+                  <div id = "explanations">
+                      <div id = "explanation">
+                          <h1 id = "aboutUs" >ABOUT US</h1>
+                          <p>Best restaurant in Barcelona for all of your Spanish food must haves.</p>
+                      </div>
+                      <div id = "explanation">
+                          <h1 id = "reservation">RESERVATIONS</h1>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula vestibulum lorem sit amet ultricies. Maecenas auctor arcu felis, vitae bibendum est varius non. Donec eros magna, accumsan non nulla eget, posuere accumsan enim. </p>
+                      </div>
+                      <div id = "explanation">
+                          <h1 id = "holidays">HOLIDAYS</h1>
+                          <p>Nam vitae luctus magna. Nam id nisl ut orci dignissim sodales. Sed at ante odio. Aenean placerat arcu vitae euismod ullamcorper. Phasellus eget felis a orci pharetra pretium eget vestibulum tellus. Phasellus odio neque, scelerisque in pretium id, luctus vel nulla. </p>
+                      </div>
+                      <div id = "explanation">
+                          <h1 id ="lostfound">LOST & FOUND </h1>
+                          <p>Mauris accumsan ligula orci, sit amet consequat nulla semper vel. Aliquam faucibus, dui id varius semper, nulla magna bibendum nulla, sed vestibulum nisi mi et diam. Mauris porttitor mollis dui, at posuere dui porta eu.</p>
+                      </div>
+                      <div id = "explanation">
+                          <h1 id = "receipt">RECEIPT REQUESTS</h1>
+                          <p>Duis laoreet metus non massa fermentum, ut interdum dolor facilisis. Phasellus a ipsum eu augue placerat efficitur. Curabitur vehicula, lacus ac venenatis vestibulum, justo nunc varius mi, interdum varius tortor enim at justo. Pellentesque ultrices nibh at arcu iaculis, vitae pretium arcu dictum. </p>
+                      </div>
+                    </div>
+              </div> 
           </div>
-          <div id = "nav" class="nav">
-            <div id = "option" onclick = 'jump("aboutUs")'>ABOUT US </div>
-            <div id = "option" onclick = 'jump("reservation")'>RESERVATIONS</div>
-            <div id = "option" onclick = 'jump("holidays")'>HOLIDAYS</div>
-            <div id = "option" onclick = 'jump("lostfound")'> LOST & FOUND </div>
-            <div id = "option" onclick = 'jump("receipt")'>RECEIPT REQUESTS</div>
-            </div>
-            <div id = "explanations">
-              <div id = "explanation">
-                <h1 id = "aboutUs" >ABOUT US</h1>
-                <p>Best restaurant in Barcelona for all of your Spanish food must haves.</p>
-              </div>
-              <div id = "explanation">
-                <h1 id = "reservation">RESERVATIONS</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula vestibulum lorem sit amet ultricies. Maecenas auctor arcu felis, vitae bibendum est varius non. Donec eros magna, accumsan non nulla eget, posuere accumsan enim. </p>
-              </div>
-              <div id = "explanation">
-                <h1 id = "holidays">HOLIDAYS</h1>
-                <p>Nam vitae luctus magna. Nam id nisl ut orci dignissim sodales. Sed at ante odio. Aenean placerat arcu vitae euismod ullamcorper. Phasellus eget felis a orci pharetra pretium eget vestibulum tellus. Phasellus odio neque, scelerisque in pretium id, luctus vel nulla. </p>
-              </div>
-              <div id = "explanation">
-                <h1 id ="lostfound">LOST & FOUND </h1>
-                <p>Mauris accumsan ligula orci, sit amet consequat nulla semper vel. Aliquam faucibus, dui id varius semper, nulla magna bibendum nulla, sed vestibulum nisi mi et diam. Mauris porttitor mollis dui, at posuere dui porta eu.</p>
-              </div>
-              <div id = "explanation">
-                <h1 id = "receipt">RECEIPT REQUESTS</h1>
-                <p>Duis laoreet metus non massa fermentum, ut interdum dolor facilisis. Phasellus a ipsum eu augue placerat efficitur. Curabitur vehicula, lacus ac venenatis vestibulum, justo nunc varius mi, interdum varius tortor enim at justo. Pellentesque ultrices nibh at arcu iaculis, vitae pretium arcu dictum. </p>
-              </div>
-            </div>
-          </div> 
-          </div>
-          
-         <!-- TOGO--> 
-         <div id= "togo"class = "tabcontent"></div> 
           <!-- MENUS--> 
           <div id= "menus"class = "tabcontent">
             <div id = "menusContainer">
               <div id= "slideShow">
-                <img class = "mainPhoto" src = "./images/menu1.png"    >
+                  <img class = "mainPhoto" src = "./images/menu1.jpg ">
               </div>
-                <div id = "nav" class= "nav">
+              <div id = "nav" class= "nav">
                   <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"brunchMenu")'>BRUNCH </div>
                   <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"middayMenu")'>MIDDAY </div>
                   <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"dinnerMenu")'>DINNER </div>
@@ -130,381 +125,370 @@
                   <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"wineMenu")'>WINE</div>
                   <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"dessertMenu")'>DESSERT </div>
                   <div id= "option" class = "menuLinks" onclick = 'openMenu(event,"coffeeMenu")'>COFFEE/TEA </div>
-                </div>
-                <div id= "explanations">
+              </div>
+              <div id= "explanations">
+                <!-- Brunch Menu--> 
                   <div id = "brunchMenu" class="menuOptions" >
-                    <div id = "brunchSelection">
-                    <h1 id="brunch">BRUNCH</h1>
-                    <div id="menuItem">
-                      <p id="item">AVOCADO TOAST / 10</p>
-                      <p id= "ingredient">Toasted Sourdough, Calabrian Chili, Piparras, Mache</p>
-                      <p id = "allergy">wheat</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">SUNNY PANCAKES / 15</p>
-                      <p id= "ingredient">Hazlenut Maple Praline, Brown Butter</p>
-                      <p id = "allergy">dairy, wheat</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">BISCUITS AND GRAVY / 12</p>
-                      <p id= "ingredient">Cheddar Biscuits, Poached Eggs, Breakfast Sausage Gravy, Hot Sauce</p>
-                      <p id = "allergy">dairy,egg,wehat</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">TORRIJAS / 15</p>
-                      <p id= "ingredient">Sourdough, Honey, Maple Syrup, Cinnamon</p>
-                      <p id = "allergy">dairy,egg,wheat</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">PAN CON TOMATE / 10</p>
-                      <p id= "ingredient">Toasted Sourdough, Tomatoe, Olive Oil</p>
-                      <p id = "allergy">wheat</p>
-                    </div>
+                      <div id = "brunchSelection">
+                          <h1 id="brunch">BRUNCH</h1>
+                          <div id="menuItem">
+                              <p id="item">AVOCADO TOAST / 10</p>
+                              <p id= "ingredient">Toasted Sourdough, Calabrian Chili, Piparras, Mache</p>
+                              <p id = "allergy">wheat</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">SUNNY PANCAKES / 15</p>
+                              <p id= "ingredient">Hazlenut Maple Praline, Brown Butter</p>
+                              <p id = "allergy">dairy, wheat</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">BISCUITS AND GRAVY / 12</p>
+                              <p id= "ingredient">Cheddar Biscuits, Poached Eggs, Breakfast Sausage Gravy, Hot Sauce</p>
+                              <p id = "allergy">dairy,egg,wehat</p>
+                          </div>
+                          <div id="menuItem">
+                             <p id="item">TORRIJAS / 15</p>
+                             <p id= "ingredient">Sourdough, Honey, Maple Syrup, Cinnamon</p>
+                             <p id = "allergy">dairy,egg,wheat</p>
+                          </div>
+                          <div id="menuItem">
+                             <p id="item">PAN CON TOMATE / 10</p>
+                             <p id= "ingredient">Toasted Sourdough, Tomatoe, Olive Oil</p>
+                             <p id = "allergy">wheat</p>
+                          </div>
+                      </div>
+                      <div id = "sandwiches">
+                          <h1 id ="sandwiches">SANDWICHES</h1>
+                          <p id="glutenFree">substitute gluten-free bread +2</p>
+                          <div id="menuItem">
+                              <p id="item">EGG & CHEESE SANDWICH / 13</p>
+                              <p id= "ingredient">Gochujang Aiolo, Crispy Potatoes, Cheddar, Brioche</p>
+                              <p id = "additions">[   add sausage, bacon, or avocado +5   ]</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">FRIED CHICKEN SANDWICH/ 15</p>
+                              <p id= "ingredient">Chicken Breast, Shredden Cabbage, B&B Pickles, Kewpie Mayo, Hot Honey</p>
+                              <p id = "additions">[   add bacon +5, add avocado +3   ]</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">EGGS BENEDICT/ 14</p>
+                              <p id= "ingredient">English muffin, Ham, Poached Eggs, Hollondaise Sauce</p>
+                              <p id = "additions">[   add salmon +7, add spinach +3   ]</p>
+                          </div>
+                      </div>
+                      <div id="sides">
+                          <h1 id="sides">SIDES</h1>
+                          <div id="menuItem">
+                              <p id="item">Patatas Bravas/ 7</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">Calamari / 10</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">Bacon / 8</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">Breakfast Sausage / 8</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">Hash Browns / 9</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">Toast and Local Jam / 7</p>
+                          </div>
+                      </div>
                   </div>
-          
-                  
-                  <div id = "sandwiches">
-                    <h1 id ="sandwiches">SANDWICHES</h1>
-                    <p id="glutenFree">substitute gluten-free bread +2</p>
-                    <div id="menuItem">
-                      <p id="item">EGG & CHEESE SANDWICH / 13</p>
-                      <p id= "ingredient">Gochujang Aiolo, Crispy Potatoes, Cheddar, Brioche</p>
-                      <p id = "additions">[   add sausage, bacon, or avocado +5   ]</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">FRIED CHICKEN SANDWICH/ 15</p>
-                      <p id= "ingredient">Chicken Breast, Shredden Cabbage, B&B Pickles, Kewpie Mayo, Hot Honey</p>
-                      <p id = "additions">[   add bacon +5, add avocado +3   ]</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">EGGS BENEDICT/ 14</p>
-                      <p id= "ingredient">English muffin, Ham, Poached Eggs, Hollondaise Sauce</p>
-                      <p id = "additions">[   add salmon +7, add spinach +3   ]</p>
-                    </div>
-                  </div>
-                  
-                  <div id="sides">
-                    <h1 id="sides">SIDES</h1>
-                    <div id="menuItem">
-                      <p id="item">Patatas Bravas/ 7</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">Calamari / 10</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">Bacon / 8</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">Breakfast Sausage / 8</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">Hash Browns / 9</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">Toast and Local Jam / 7</p>
-                    </div>
-                  </div>
-                </div>
-                  
+                  <!-- Midday Menu--> 
                   <div id = "middayMenu" class = "menuOptions">
-                    <h1 id= "midday">MIDDAY</h1>
-                    <div id="menuItem">
-                      <p id="item">Oysters / 23 [half-dozen]</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">PULPO A LA GALLEGA / 15</p>
-                      <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
-                      <p id = "allergy">fish</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">SEAFOOD / 20</p>
-                      <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
-                      <p id = "allergy">fish</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item"> SEAFOOD PAELLA / 25</p>
-                      <p id= "ingredient">Rice, Seafood</p>
-                      <p id = "allergy">wheat, fish</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item"> ARROZ NEGRO / 20</p>
-                      <p id= "ingredient">Black Rice, Seafood</p>
-                      <p id = "allergy">wheat, fish</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">WARM GRAIN BOWL/ 15</p>
-                      <p id= "ingredient">Brown & Wild Ride, Grilled Snap Peas, Spring Radishes, Cucumbers, Pepita Romesco, Avocado, 6 Minute Egg</p>
-                      <p id = "additions">[   Add Smoked Salmon +8, Grilled or Friend Chicken +8   ]</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">FRIED CHICKEN SANDWICH/ 19 [   add fries + 5   ]</p>
-                      <p id= "ingredient">Chicken Breast, Shredden Cabbage, B&B Pickles, Kewpie Mayo, Hot Honey</p>
-                      <p id = "allergy">wheat, fish, egg, dairy</p>
-                      <p id = "additions">[   add bacon +5, add avocado +3   ]</p>
-                    </div>
-                    </div>
-                    <div id = "dinnerMenu" class = "menuOptions">
-                    <h1 id = "starters">STARTERS</h1>
-                    <div id="menuItem">
-                      <p id="item"> PATATAS BRAVAS / 7  </p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">CHIPIRONES / 10</p>
-                      <p id= "ingredient">Calamari</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">PADR´ON PEPPERS / 7</p>
-                      <p id= "ingredient">Green peppers</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">MUSHROOMS / 10</p>
-                      <p id= "ingredient">Olive Oil, Garlic</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">TORTILLA ESPA˜NOLA / 10</p>
-                      <p id= "ingredient">Potato Tortilla</p>
-                    </div>
-                    <h1 id = "dishes">DISHES</h1>
-                    <div id="menuItem">
-                      <p id="item">PULPO A LA GALLEGA / 15</p>
-                      <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
-                      <p id = "allergy">fish</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">SEAFOOD / 20</p>
-                      <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
-                      <p id = "allergy">fish</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item"> SEAFOOD PAELLA / 25</p>
-                      <p id= "ingredient">Rice, Seafood</p>
-                      <p id = "allergy">wheat, fish</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item"> ARROZ NEGRO / 20</p>
-                      <p id= "ingredient">Black Rice, Seafood</p>
-                      <p id = "allergy">wheat, fish</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">WARM GRAIN BOWL/ 15</p>
-                      <p id= "ingredient">Brown & Wild Ride, Grilled Snap Peas, Spring Radishes, Cucumbers, Pepita Romesco, Avocado, 6 Minute Egg</p>
-                      <p id = "additions">[   Add Smoked Salmon +8, Grilled or Friend Chicken +8   ]</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item">FRIED CHICKEN SANDWICH/ 19 [   add fries + 5   ]</p>
-                      <p id= "ingredient">Chicken Breast, Shredden Cabbage, B&B Pickles, Kewpie Mayo, Hot Honey</p>
-                      <p id = "allergy">wheat, fish, egg, dairy</p>
-                      <p id = "additions">[   add bacon +5, add avocado +3   ]</p>
-                    </div>
-                    <h1 id = "sidesDinner">SIDES</h1>
-                    <div id="menuItem">
-                      <p id="item"> PATATAS BRAVAS / 7  </p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item"> SIDE SALAD / 7</p>
-                      <p id= "ingredient">Italian Dressing</p>
-                    </div>
-                    <div id="menuItem">
-                      <p id="item"> GRILLED VEGGIES / 9</p>
-                      <p id= "ingredient">Mushrooms, Peppers, Onions</p>
-                    </div>
-                    </div>
-                    <div id = "cocktailMenu" class = "menuOptions">
-                     
-                        <h1 id="cocktails">BRUNCH COCKTAILS</h1>
-                        <div id="menuItem">
+                      <h1 id= "midday">MIDDAY</h1>
+                      <div id="menuItem">
+                          <p id="item">Oysters / 23 [half-dozen]</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">PULPO A LA GALLEGA / 15</p>
+                          <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
+                          <p id = "allergy">fish</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">SEAFOOD / 20</p>
+                          <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
+                          <p id = "allergy">fish</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item"> SEAFOOD PAELLA / 25</p>
+                          <p id= "ingredient">Rice, Seafood</p>
+                          <p id = "allergy">wheat, fish</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item"> ARROZ NEGRO / 20</p>
+                          <p id= "ingredient">Black Rice, Seafood</p>
+                          <p id = "allergy">wheat, fish</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">WARM GRAIN BOWL/ 15</p>
+                          <p id= "ingredient">Brown & Wild Ride, Grilled Snap Peas, Spring Radishes, Cucumbers, Pepita Romesco, Avocado, 6 Minute Egg</p>
+                          <p id = "additions">[   Add Smoked Salmon +8, Grilled or Friend Chicken +8   ]</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">FRIED CHICKEN SANDWICH/ 19 [   add fries + 5   ]</p>
+                          <p id= "ingredient">Chicken Breast, Shredden Cabbage, B&B Pickles, Kewpie Mayo, Hot Honey</p>
+                          <p id = "allergy">wheat, fish, egg, dairy</p>
+                          <p id = "additions">[   add bacon +5, add avocado +3   ]</p>
+                      </div>
+                  </div>
+                  <!-- Dinner Menu--> 
+                  <div id = "dinnerMenu" class = "menuOptions">
+                      <h1 id = "starters">STARTERS</h1>
+                      <div id="menuItem">
+                          <p id="item"> PATATAS BRAVAS / 7  </p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">CHIPIRONES / 10</p>
+                          <p id= "ingredient">Calamari</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">PADR´ON PEPPERS / 7</p>
+                          <p id= "ingredient">Green peppers</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">MUSHROOMS / 10</p>
+                          <p id= "ingredient">Olive Oil, Garlic</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">TORTILLA ESPA˜NOLA / 10</p>
+                          <p id= "ingredient">Potato Tortilla</p>
+                      </div>
+                      <h1 id = "dishes">DISHES</h1>
+                      <div id="menuItem">
+                          <p id="item">PULPO A LA GALLEGA / 15</p>
+                          <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
+                          <p id = "allergy">fish</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">SEAFOOD / 20</p>
+                          <p id= "ingredient">Octopus, Potatoes, Sea Salt </p>
+                          <p id = "allergy">fish</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item"> SEAFOOD PAELLA / 25</p>
+                          <p id= "ingredient">Rice, Seafood</p>
+                          <p id = "allergy">wheat, fish</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item"> ARROZ NEGRO / 20</p>
+                          <p id= "ingredient">Black Rice, Seafood</p>
+                          <p id = "allergy">wheat, fish</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">WARM GRAIN BOWL/ 15</p>
+                          <p id= "ingredient">Brown & Wild Ride, Grilled Snap Peas, Spring Radishes, Cucumbers, Pepita Romesco, Avocado, 6 Minute Egg</p>
+                          <p id = "additions">[   Add Smoked Salmon +8, Grilled or Friend Chicken +8   ]</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item">FRIED CHICKEN SANDWICH/ 19 [   add fries + 5   ]</p>
+                          <p id= "ingredient">Chicken Breast, Shredden Cabbage, B&B Pickles, Kewpie Mayo, Hot Honey</p>
+                          <p id = "allergy">wheat, fish, egg, dairy</p>
+                          <p id = "additions">[   add bacon +5, add avocado +3   ]</p>
+                      </div>
+                      <h1 id = "sidesDinner">SIDES</h1>
+                      <div id="menuItem">
+                          <p id="item"> PATATAS BRAVAS / 7  </p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item"> SIDE SALAD / 7</p>
+                          <p id= "ingredient">Italian Dressing</p>
+                      </div>
+                      <div id="menuItem">
+                          <p id="item"> GRILLED VEGGIES / 9</p>
+                          <p id= "ingredient">Mushrooms, Peppers, Onions</p>
+                      </div>
+                  </div>
+                  <!-- cocktain menu--> 
+                  <div id = "cocktailMenu" class = "menuOptions">
+                      <h1 id="cocktails">BRUNCH COCKTAILS</h1>
+                      <div id="menuItem">
                           <p id="item"> CHAMPAGNE PROBLEMS / 15</p>
                           <p id= "ingredient">Genepy, Strawberry, Lemon, Cava | Spritz</p>
-                        </div>
-                        <div id="menuItem">
+                      </div>
+                      <div id="menuItem">
                           <p id="item"> SUNDAY BLOODY/ 16</p>
                           <p id= "ingredient">Mezcal, Tomato, Sambal, Horseradish, Lemon | Rocks</p>
-                        </div>
-                        <div id="menuItem">
+                      </div>
+                      <div id="menuItem">
                           <p id="item"> SNAKE CHARMER / 16</p>
                           <p id= "ingredient">Mezcal, Pear, Celery, Pandan, Mustard Seed, Soda | Rocks</p>
-                        </div>
-                        <div id="menuItem">
+                      </div>
+                      <div id="menuItem">
                           <p id="item"> HONEYBEAR ON HOLIDAY / 16</p>
                           <p id= "ingredient">Rum, Montenegro, Apricot, Pineapple, Honey, | Pepple Ice</p>
-                        </div>
                       </div>
-                    
-                 
-                    <div id = "wineMenu" class = "menuOptions">
+                  </div>
+                  <!-- wine menu--> 
+                  <div id = "wineMenu" class = "menuOptions">
                       <h1 id= "bubbles">BUBBLES</h1>
                       <div id="menuItem">
-                        <p id="item"> Pinot Noir, Gruet, Methode Champenoise, New Mexico, Brut Rose NV, organic 14 / 56</p>
+                          <p id="item"> Pinot Noir, Gruet, Methode Champenoise, New Mexico, Brut Rose NV, organic 14 / 56</p>
                       </div>
                       <h1 id= "redwine">VINO TINTO</h1>
                       <div id="menuItem">
-                        <p id="item"> Sangiovese / Merlot / Cabarnet Sauvignon, Tolaini, Al Passo, Toscana, IGT, Italy 2018, organic 15 / 60</p>
+                          <p id="item"> Sangiovese / Merlot / Cabarnet Sauvignon, Tolaini, Al Passo, Toscana, IGT, Italy 2018, organic 15 / 60</p>
                       </div>
                       <div id="menuItem">
-                        <p id="item"> Alicante Bouschet / Mencia, César Márquez, "Las Firmas," Bierzo, Spain 2017 / 80</p>
+                          <p id="item"> Alicante Bouschet / Mencia, César Márquez, "Las Firmas," Bierzo, Spain 2017 / 80</p>
                       </div>
                       <h1 id= "whitewine">VINO BLANCO</h1>
                       <div id="menuItem">
-                        <p id="item"> Sauvignon Blanc, Clotilde Davenne, Saint-Bris, Burgandy, France 2020, organic 15 / 60</p>
+                          <p id="item"> Sauvignon Blanc, Clotilde Davenne, Saint-Bris, Burgandy, France 2020, organic 15 / 60</p>
                       </div>
                       <div id="menuItem">
-                        <p id="item"> Palomino, Vina Callejuela, La Andalucia, Spain 2018, organic / 72</p>
+                          <p id="item"> Palomino, Vina Callejuela, La Andalucia, Spain 2018, organic / 72</p>
                       </div>
                       <div id="menuItem">
-                        <p id="item">Pinot Bianco, Kellerei-Cantina Adrian, Trentino-Alto Adige, Italy 2020 13 / 52</p>
+                          <p id="item">Pinot Bianco, Kellerei-Cantina Adrian, Trentino-Alto Adige, Italy 2020 13 / 52</p>
                       </div>
-                    </div>
-                    <div id = "dessertMenu" class = "menuOptions">
+                  </div>
+                  <!-- Dessert menu--> 
+                  <div id = "dessertMenu" class = "menuOptions">
                     <h1 id = "dessert">DESSERT</h1>
                     <div id="menuItem">
-                      <p id="item"> THE SUNDAY SUNDAE / 12</p>
-                      <p id= "ingredient">Blueberry and Chocolate Soft Serve, Hazlenut Water, All The Goodies & A Cherry On Top</p>
+                        <p id="item"> THE SUNDAY SUNDAE / 12</p>
+                        <p id= "ingredient">Blueberry and Chocolate Soft Serve, Hazlenut Water, All The Goodies & A Cherry On Top</p>
                     </div>
                     <div id="menuItem">
-                      <p id="item"> S'MORES SOFT SERVE / 9</p>
-                      <p id= "ingredient">Chocolate, Feuilletine, Toasted Meringue</p>
+                        <p id="item"> S'MORES SOFT SERVE / 9</p>
+                        <p id= "ingredient">Chocolate, Feuilletine, Toasted Meringue</p>
                     </div>
                     <div id="menuItem">
-                      <p id="item"> TORRIJAS / 10</p>
-                      <p id= "ingredient">Sourdough, Honey, Maple Syrup, Powdered Sugar</p>
+                        <p id="item"> TORRIJAS / 10</p>
+                        <p id= "ingredient">Sourdough, Honey, Maple Syrup, Powdered Sugar</p>
                     </div>
                     <div id="menuItem">
-                      <p id="item"> MANGO STICKY RICE / 10</p>
-                      <p id= "ingredient">Pandan Sticky Rice, Mango, Condensed Milk</p>
+                        <p id="item"> MANGO STICKY RICE / 10</p>
+                        <p id= "ingredient">Pandan Sticky Rice, Mango, Condensed Milk</p>
                     </div>
                     <h1 id= "dessertWine">DESSERT WINES</h1>
                     <div id="menuItem">
-                      <p id="item"> [   MACABEAU   ] RIVESALTES AMBR´E / 10</p>
-                      <p id= "ingredient">Domaine De Rancy / Roussillon, France</p>
+                        <p id="item"> [   MACABEAU   ] RIVESALTES AMBR´E / 10</p>
+                        <p id= "ingredient">Domaine De Rancy / Roussillon, France</p>
                     </div>
                     <div id="menuItem">
-                      <p id="item"> PINEAU DE CHARENTES / 12</p>
-                      <p id= "ingredient">Pierre Ferrand / Cognac, France</p>
+                        <p id="item"> PINEAU DE CHARENTES / 12</p>
+                        <p id= "ingredient">Pierre Ferrand / Cognac, France</p>
                     </div>
-                    </div>
-                    <div id = "coffeeMenu" class = "menuOptions">
+                  </div>
+                  <!-- Cofee Menu--> 
+                  <div id = "coffeeMenu" class = "menuOptions">
                       <h1 id = "coffee">COFFEE</h1>
                       <p id = "blend" >PARLOR / Prospect Blend</p>
                       <div id = "coffeeSelection">
-                        <div id="menuItem">
-                          <p id="item"> ESPRESSO [ double ] / 4</p>
-                        </div>
-                        <div id="menuItem">
-                          <p id="item"> DRIP COFFEE / 5</p>
-                        </div>
-                        <div id="menuItem">
-                          <p id="item"> OAT MOCHA / 7</p>
-                          <p id="ingredient">Cocoa, Cinnamon, [ dairy-free ] </p>
-                        </div>
-                        <div id="menuItem">
-                          <p id="item">LATTE or CAPPUCCINO/ 6</p>
-                        </div>
-                        <div id="menuItem">
-                          <p id="item"> COLD BREW / 6</p>
-                        </div>
-                        <div id="menuItem">
-                          <p id="item">HOT CHOCOLATE / 5</p>
-                          <p id="ingredient">Cocoa, Cinnamon, [ dairy-free ] </p>
-                        </div>
-                    </div>
-                    <h1 id = "tea">TEA</h1>
-                    <div id = "teaSelection">
-                      <div id="menuItem">
-                        <p id="item">MATCHA  /  KETTL  / 5</p>
-                        <p id="ingredient">Hot or Iced  /  Latte +2 </p>
+                          <div id="menuItem">
+                              <p id="item"> ESPRESSO [ double ] / 4</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item"> DRIP COFFEE / 5</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item"> OAT MOCHA / 7</p>
+                              <p id="ingredient">Cocoa, Cinnamon, [ dairy-free ] </p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">LATTE or CAPPUCCINO/ 6</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item"> COLD BREW / 6</p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">HOT CHOCOLATE / 5</p>
+                              <p id="ingredient">Cocoa, Cinnamon, [ dairy-free ] </p>
+                          </div>
                       </div>
-                      <div id="menuItem">
-                        <p id="item">TUMERIC SPICED CHAI  /  CHAMELLIA  </p>
-                        <p id="ingredient">Hot or Iced  /  Latte +2 </p>
+                      <h1 id = "tea">TEA</h1>
+                      <div id = "teaSelection">
+                          <div id="menuItem">
+                              <p id="item">MATCHA  /  KETTL  / 5</p>
+                              <p id="ingredient">Hot or Iced  /  Latte +2 </p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">TUMERIC SPICED CHAI  /  CHAMELLIA  </p>
+                              <p id="ingredient">Hot or Iced  /  Latte +2 </p>
+                          </div>
                       </div>
-                    </div>
-                    <h1 id = "softdrink">SOFT BEVERAGES</h1>
-                    <div id = "softdrinkSelection">
-                      <div id="menuItem">
-                        <p id="item">ICED TEA  /  IN PURSUIT OF TEA  /  5</p>
-                        <p id="ingredient">Earl Grey </p>
-                        <p id="ingredient">Scarlet Glow [  hibiscus blend  ] </p>
+                      <h1 id = "softdrink">SOFT BEVERAGES</h1>
+                      <div id = "softdrinkSelection">
+                          <div id="menuItem">
+                              <p id="item">ICED TEA  /  IN PURSUIT OF TEA  /  5</p>
+                              <p id="ingredient">Earl Grey </p>
+                              <p id="ingredient">Scarlet Glow [  hibiscus blend  ] </p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">ARNOLD PALMER  /  7</p>
+                              <p id="ingredient">Earl Grey + Lemonade </p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">PATTY BERG  /  7</p>
+                              <p id="ingredient">Scarlet Glow + Grapefruit </p>
+                          </div>
+                          <div id="menuItem">
+                              <p id="item">FEVER TREE  /  6</p>
+                              <p id="ingredient">Tonic</p>
+                              <p id="ingredient">Cola</p>
+                              <p id="ingredient">Ginger Beer</p>
+                          </div>
                       </div>
-                      <div id="menuItem">
-                        <p id="item">ARNOLD PALMER  /  7</p>
-                        <p id="ingredient">Earl Grey + Lemonade </p>
-                      </div>
-                      <div id="menuItem">
-                        <p id="item">PATTY BERG  /  7</p>
-                        <p id="ingredient">Scarlet Glow + Grapefruit </p>
-                      </div>
-                      <div id="menuItem">
-                        <p id="item">FEVER TREE  /  6</p>
-                        <p id="ingredient">Tonic</p>
-                        <p id="ingredient">Cola</p>
-                        <p id="ingredient">Ginger Beer</p>
-                      </div>
-                      
-                    </div>
-                    </div>
                   </div>
               </div>
             </div>
-  
-           <!-- PRIVATE EVENTS--> 
-           <div id= "privateevents"class = "tabcontent">
-            <div id= "slideShow">
-              <img class = "mainPhoto" src = "./images/privateevents2.png" >
-            </div>
-            <div id = "eventContent">
-              <h1 id = "privateEvents">Private Events</h1>
-              <p> Aenean a rutrum sapien. In sit amet bibendum diam, sed pretium erat. Curabitur maximus augue id massa rutrum congue. Sed ut purus sit amet urna ultricies malesuada. In mollis felis purus, id ornare ante posuere ac. Praesent eu ex nec ante tempus bibendum. Sed dapibus metus egestas tortor sodales, ut fringilla tortor sodales. Pellentesque sagittis elit felis, luctus scelerisque est egestas ac. Suspendisse eleifend id ligula lacinia ultrices. Pellentesque ultricies convallis sapien, a fermentum diam auctor egestas. Suspendisse potenti. Phasellus vestibulum elit non cursus venenatis.</p>
-              <div id = "eventButtons">
-                <button id = "events">WANT TO KNOW MORE?</button>
-                <button id = "events">INQUIRE NOW</button>
+          </div>
+          <!-- PRIVATE EVENTS--> 
+          <div id= "privateevents"class = "tabcontent">
+              <div id= "slideShow">
+                  <img   class="mainPhoto" src = "./images/privateevents2.jpg" >>
               </div>
-            </div>
-           </div> 
-            <!-- PRESS--> 
-            <div id= "press"class = "tabcontent"></div> 
-             <!-- GIFT CARDS--> 
-             <div id= "giftcards"class = "tabcontent"></div> 
-              <!-- RESERVATIONS--> 
-              <div id= "modalReservations"class = "tabcontent">
-                <span class ="close" onclick= 'closeModal()'>&times;</span>
-                <div id = "modalContent">
+              <div id = "eventContent">
+                  <h1 id = "privateEvents">Private Events</h1>
+                  <p> Aenean a rutrum sapien. In sit amet bibendum diam, sed pretium erat. Curabitur maximus augue id massa rutrum congue. Sed ut purus sit amet urna ultricies malesuada. In mollis felis purus, id ornare ante posuere ac. Praesent eu ex nec ante tempus bibendum. Sed dapibus metus egestas tortor sodales, ut fringilla tortor sodales. Pellentesque sagittis elit felis, luctus scelerisque est egestas ac. Suspendisse eleifend id ligula lacinia ultrices. Pellentesque ultricies convallis sapien, a fermentum diam auctor egestas. Suspendisse potenti. Phasellus vestibulum elit non cursus venenatis.</p>
+                  <div id = "eventButtons">
+                    <button id = "events">WANT TO KNOW MORE?</button>
+                    <button id = "events">INQUIRE NOW</button>
+                  </div>
+              </div>
+          </div> 
+         <!-- RESERVATIONS--> 
+          <div id= "modalReservations"class = "tabcontent">
+              <span class ="close" onclick= 'closeModal()'>&times;</span>
+              <div id = "modalContent">
                   <h1 id = "reservations">RESERVATIONS</h1>
                   <form action="">
-                  
-                  <input type = "text" id="name"name= "name" placeholder = "First and Last Name">
-                  <input type = "number" id ="phone" name= "phone" placeholder = "Phone Number">
-                    <select name = "numberPeople" id="numberPeople">
-                    <option class = "placeholder" value = "" disabled selected>Number of People</option>
-                    <option value = "1">1 Person</option>
-                    <option value = "2">2 People</option>
-                    <option value = "3">3 People</option>
-                    <option value = "4">4 People</option>
-                    <option value = "5">5 People</option>
-                    <option value = "6">6 People</option>
-                    <option value = "7">7+ People</option>
-                    </select>
-                  <input type= "text" id = "date" placeholder= "Date" onfocus="(this.type='date')">
-                </form>
-                <input type = "submit" id="tableButton" value = "FIND A TABLE">
-                </div>
-              </div> 
-
-            </div>
-
-    <div id = "footer">
-                <div id = "banner"> 
-                  <div id = "icons">
-                    <p><a href= "https://www.facebook.com/" target="_blank"><img src = "./images/fb.svg" ></a></p>
-                  <p><a href = "https://www.instagram.com/" target="_blank"> <img src = "./images/instagram.svg"></a></p>
-                  <p><a href = "https://www.spotify.com/" target="_blank"><img src = "./images/spotify.svg"></a></p>
-                  </div>
-                  <div id = "banner-address" onclick= ""><a target="_blank" href = " https://www.google.com/maps/dir/41.3907372,2.1745004/Montju%C3%AFc+Park/@41.3802703,2.1473562,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12a4a345edc4bd0f:0x4145c88af7bc5784!2m2!1d2.1618564!2d41.3693754">CARRER DE MARGARIT 85, BARCELONA 08004</a> </div>
-                  <button class = "email">EMAIL SIGNUP</button>
+                      <input type = "text" id="name"name= "name" placeholder = "First and Last Name">
+                      <input type = "number" id ="phone" name= "phone" placeholder = "Phone Number">
+                        <select name = "numberPeople" id="numberPeople">
+                            <option class = "placeholder" value = "" disabled selected>Number of People</option>
+                            <option value = "1">1 Person</option>
+                            <option value = "2">2 People</option>
+                            <option value = "3">3 People</option>
+                            <option value = "4">4 People</option>
+                            <option value = "5">5 People</option>
+                            <option value = "6">6 People</option>
+                            <option value = "7">7+ People</option>
+                        </select>
+                        <input type= "text" id = "date" placeholder= "Date" onfocus="(this.type='date')">
+                  </form>
+                  <input type = "submit" id="tableButton" value = "FIND A TABLE">
               </div>
-                <div id = "github">Created By Sophia Lanzendorf <img src = "./images/github.svg"></div>
+          </div> 
     </div>
-              
-
+    <div id = "footer">
+        <div id = "banner"> 
+            <div id = "icons">
+                <p><a href= "https://www.facebook.com/" target="_blank"><img src = "./images/fb.svg" ></a></p>
+                <p><a href = "https://www.instagram.com/" target="_blank"> <img src = "./images/instagram.svg"></a></p>
+                <p><a href = "https://www.spotify.com/" target="_blank"><img src = "./images/spotify.svg"></a></p>
+            </div>
+            <div id = "banner-address" onclick= ""><a target="_blank" href = " https://www.google.com/maps/dir/41.3907372,2.1745004/Montju%C3%AFc+Park/@41.3802703,2.1473562,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x12a4a345edc4bd0f:0x4145c88af7bc5784!2m2!1d2.1618564!2d41.3693754">CARRER DE MARGARIT 85, BARCELONA 08004</a> </div>
+                <button class = "email">EMAIL SIGNUP</button>
+            </div>
+            <div id = "github">Created By Sophia Lanzendorf <img src = "./images/github.svg"></div>
+    </div>
     </div>
   </body>
 </html>

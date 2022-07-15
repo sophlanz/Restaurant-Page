@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/sophlanz/Restaurant-Page#readme",
   "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-contrib-watch": "^1.1.0",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2"
   },
