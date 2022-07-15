@@ -156,13 +156,18 @@ img {
 }
 #locations {
     grid-column:1/4;
-    
     margin-top:80px;
     margin-bottom:50px;
     display:flex;
     gap:20px;
-    
     justify-content:left;
+}
+/*change for mobile view*/
+@media (max-width: 1000px) {
+    #locations {
+          flex-wrap:wrap;
+          justify-content:center;
+     }
 }
 #location1, #location2 {
     width:380px;
