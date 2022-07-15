@@ -68,8 +68,8 @@ table {
     align-items:center;
     grid-column: 1 /4;
    /* grid-row:2/3;*/
-    height: 700px;
-    width:100vw;
+    height: auto;
+    width:auto;
     overflow:hidden;
     
 }
@@ -103,7 +103,6 @@ img {
     grid-row:2/3;
 }
 #nav {
-    width:100vw;
     height:80px;
     grid-column:1/4;
     grid-row:1/2;
