@@ -6,12 +6,13 @@
     <script src = "index.js" defer></script>
     <script src="./dist/main.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div id = "content">
     <!--nav / tabs-->
       <div id ="nav"> 
-         <div id = "title" class = "tablinks" onclick = 'openTab(event, "home")'><strong>SUNDAY</strong>/ <i>in</i>/<strong>BARCELONA</strong></div>
+        <div id = "title" class = "tablinks" onclick = 'openTab(event, "home")'><strong>SUNDAY</strong>/ <i>in</i>/<strong>BARCELONA</strong></div>
          <div id = "options">
            <div id = "option" class = "tablinks" onclick = 'openTab(event, "faq")' >FAQ</div>
            <div id = "option" class = "tablinks" onclick = 'openTab(event, "menus")'>MENUS</div>
@@ -19,7 +20,23 @@
            <div id = "option" class = "reserveModal" onclick = 'openModal()'>RESERVATIONS</div>
          </div>
       </div>
-
+      <!--Hamburger nav-->
+     <!-- Top Navigation Menu -->
+<div class="topnav">
+  <a onclick = 'openTab(event, "home")' class="active"><strong>SUNDAY</strong>/<br> <i>in</i>/<strong>BARCELONA</strong></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a onclick = 'openTab(event, "faq")'>FAQ</a>
+    <a onclick = 'openTab(event, "menus")'>MENUS</a>
+    <a onclick = 'openTab(event, "privateevents")' >PRIVATE EVENTS</a>
+    <a onclick = 'openModal()'>RESERVATIONS</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    </div>
       <!--tab content-->
       <div id = "tabContents">
       <!--home-->

@@ -67,3 +67,15 @@ function closeModal(){
     modal.style.display= "none"
 };
 document.getElementById('brunchMenu').click();
+//hamburger toggle
+function myFunction() {
+    //get element
+    var x = document.getElementById("myLinks");
+    //if it's open close it
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+        //if it's closed open it
+      x.style.display = "block";
+    };
+  };
