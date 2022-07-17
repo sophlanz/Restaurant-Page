@@ -6,7 +6,6 @@
     <script src = "index.js" defer></script>
     <script src="./dist/main.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div id = "content">
@@ -22,7 +21,7 @@
       </div>
       <!--Hamburger nav-->
      <!-- Top Navigation Menu -->
-<div class="topnav">
+<div  id="topnav">
   <a onclick = 'openTab(event, "home")' class="active"><strong>SUNDAY</strong>/<br> <i>in</i>/<strong>BARCELONA</strong></a>
   <!-- Navigation links (hidden by default) -->
   <div id="myLinks">
@@ -32,7 +31,8 @@
     <a onclick = 'openModal()'>RESERVATIONS</a>
   </div>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
+    <img src="./images/menu.svg">
     <i class="fa fa-bars"></i>
   </a>
 </div>
@@ -506,6 +506,7 @@
             </div>
             <div id = "github">Created By Sophia Lanzendorf <img src = "./images/github.svg"></div>
     </div>
+    <div id="footerMobile"  onclick = 'openModal()'>RESERVATIONS</div>
     </div>
   </body>
 </html>

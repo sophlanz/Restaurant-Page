@@ -44,7 +44,6 @@ body {
     flex-direction:column;
     padding:0;
     margin:0;
-    
 }
 ol, ul {
 	list-style: none;
@@ -60,8 +59,11 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}/*cutoff extra whitespace mobile view
+*/
+html,body {
+    overflow-x:hidden;
 }
-
 #slideShow {
     display:flex;
     justify-content: center;
@@ -71,7 +73,6 @@ table {
     height: auto;
     width:auto;
     overflow:hidden;
-    
 }
 img.mainPhoto {
     width:100vw;
@@ -111,7 +112,13 @@ img {
     background-color:white;
     font-weight:100;
 }
-.topnav {
+/*sticky navbar*/
+.sticky {
+    position:fixed;
+    top:0;
+    width:100%;
+}
+#topnav {
     display:none;
 }
 #title {
@@ -123,7 +130,6 @@ img {
     cursor:pointer;
 }
 #options {
- 
     display:flex;
     gap:20px;
     font-size:.7rem;
@@ -156,8 +162,7 @@ img {
     width:auto;
 }
  h1 {
-    font-size: 3rem;
-    
+    font-size: 3rem; 
 }
 #locations h1::after {
     display:block;
@@ -165,8 +170,7 @@ img {
     border-top: solid 4px #00955e;
     margin:auto;
     width:140px;
-    margin-top:45px;
-    
+    margin-top:45px;  
 }
   #address {
     width:250px;
@@ -175,10 +179,7 @@ img {
     font-size:.8rem;
     margin-top:22px;
     letter-spacing:2px;
-    
 }
-
-
 #hour {
     display:flex;
     flex-direction:column;
@@ -197,16 +198,13 @@ img {
 #graphic {
     display:flex;
     align-items:center;
-    
 }
-
 #banner {
     display:flex;
     height:200px;
     width:100vw;
     background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%2300955e' fill-opacity='1'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%2300955e' fill-opacity='1'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 #github {
     display:flex;
@@ -221,7 +219,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     justify-content:center;
     gap:15px;
     align-items:center;
-
 }
 #banner-address {
     display:inline-block;
@@ -232,13 +229,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     padding:10px;
     font-weight:100;
     cursor:pointer;
-    
 }
 #footer {
     height:250px;
     text-align:center;
     grid-row:3/4;
     width:auto;
+}
+#footerMobil {
+    display:none;
 }
 button.email {
     background-color:#00955e;
@@ -250,7 +249,6 @@ button.email {
     font-size:.8rem;
     font-weight:300;
     cursor: pointer;
-
 }
 button.email:hover {
     color: #00955e;
@@ -284,14 +282,12 @@ button.email:hover {
     flex-direction:column;
     flex-wrap:wrap;
     justify-content:center;
-    
     width:700px;
     gap:60px;
     margin-bottom:100px;
     letter-spacing:2px;
     line-height:200%;
     font-weight:lighter;
-    
 }
 #explanations h1 {
     text-align: center;
@@ -314,7 +310,6 @@ button.email:hover {
     margin-top:60px;
     margin-bottom: 60px;
     font-weight:700;
-  
 }
 /*menus*/
 #menusContainer {
@@ -329,8 +324,6 @@ h1#dishes, h1#sidesDinner, h1#cocktails, h1#bubbles, h1#redwine
     font-style:normal;
     font-weight:800;
     font-size:2rem;
-  
- 
 }
 h1#brunch,h1#sides{
     margin-bottom:40px;
@@ -341,7 +334,6 @@ h1#brunch,h1#sides{
     margin-bottom:40px;
     line-height:170%;
     letter-spacing:3px;
- 
 }
 p#allergy {
     font-size:.7rem;
@@ -384,7 +376,6 @@ h1#redwine, h1#whitewine {
     flex-wrap:wrap;
     height:240px;
     font-size:.9rem;
-    
 }
 #softdrinkSelection {
     display:flex;
@@ -392,7 +383,6 @@ h1#redwine, h1#whitewine {
     flex-wrap:wrap;
     height:300px;
     font-size:.9rem;
-    
 }
 #teaSelection {
     font-size:.9rem;
@@ -411,7 +401,6 @@ h1#tea, h1#softdrink {
     font-size:2rem;
 }
 /*private events*/
-
 #eventContent {
     margin-left:300px;
     margin-right:300px;
@@ -422,7 +411,6 @@ h1#tea, h1#softdrink {
 h1#privateEvents {
     margin-top:70px;
     margin-bottom:50px;
-
 }
 button#events {
     background-color:#00955e;
@@ -439,7 +427,6 @@ button#events {
 button#events:hover {
     color: #00955e;
     background-color:#a7d6f0;
-
 }
 /*modal/reservations*/
 #modalReservations {
@@ -453,7 +440,6 @@ button#events:hover {
     overflow: auto; /* Enable scroll if needed */
     background-color:white; /* Fallback color */
     overflow:hidden;
-     
 }
 /* The Close Button */
 .close {
@@ -462,7 +448,6 @@ button#events:hover {
     font-size: 80px;
     font-weight: lighter;
   }
-  
   .close:hover,
   .close:focus {
     color:#00955e71;
@@ -507,7 +492,6 @@ button#events:hover {
     font-family:sans-serif;
     letter-spacing:2px;
 }
-
 input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity:1;
@@ -521,6 +505,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-left:10px;
     padding-right:10px;
 }
+#topnav + #tabContent {
+    padding:60px;
+}
 /*change for mobile view*/
 @media (max-width: 1000px) {
     #locations {
@@ -530,36 +517,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
      #nav {
          display:none;
      }
-     /* Style the navigation menu */
-     .topnav {
+     /* nav menu*/
+     #topnav {
        overflow:auto;
        background-color: white;
        position: relative;
-       width:98vw;
+       width:100vw;
        display:block;
        text-align:left;
-       margin-left:30px;
        grid-row:1/3;
+       position: fixed;
      }
-     
-     /* Hide the links inside the navigation menu (except for logo/home) */
-     .topnav #myLinks {
+     /* Hide links in hamburger*/
+     #topnav #myLinks {
        display: none;
      }
      #myLinks {
          font-size:2rem;
      }
-     
-     /* Style navigation menu links */
-     .topnav a {
+     /*  nav menu links */
+     #topnav a {
        color: black;
        padding: 14px 16px;
        text-decoration: none;
        display: block;
      }
-     
-     /* Style the hamburger menu */
-     .topnav a.icon {
+     /* hamburger menu*/
+     #topnav a.icon {
        background: white;
        color:#a7d6f0 ;
        display: block;
@@ -568,15 +552,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
        right: 0;
        top: 0;
      }
-     
-     /* Add a grey background color on mouse-over */
-     .topnav a:hover {
-       background-color:#a7d6f0 ;
-       color:white;
-       
+     /* switch color and background color on hover */
+     #topnav a:hover {
+       background-color:white ;
+       color:#a7d6f0;
      }
-     
-     /* Style the active link (or home/logo) */
+     /* active links */
      .active {
        background-color: white;
        color: white;
@@ -598,6 +579,57 @@ input[type="date"]::-webkit-calendar-picker-indicator {
      }
      #github {
          font-size:1rem;
+     }
+     #reserve {
+         font-size:1.8rem;
+     }
+     #option{
+     font-size:1.8rem;
+     }
+     #explanations h1 {
+         font-size:3rem;
+     }
+     #explanation p {
+         font-size:1.8rem;
+         line-height:1.8;
+     }
+     #menuItem {
+         line-height:1.8;
+     }
+     p#item , p#ingredient {
+         font-size:1.8rem;
+     }
+     p#allergy, p#additions, p#glutenFree, p#blend {
+         font-size:1.4rem;
+     }
+     p#blend {
+         margin-top:10px;
+     }
+     #coffeeSelection, #softdrinkSelection{
+         height:auto;
+     }
+     #eventContent {
+         margin-left:20px;
+         margin-right:20px;
+         line-height:1.8;
+     }
+     /*hide other footer and display mobile one*/
+     #footer {
+         display:none
+     }
+     #footerMobile {
+        height:auto;
+        text-align:center;
+        grid-row:3/4;
+        width:100vw;;
+        background-color:#00955e;
+        font-size: 1.4rem;
+        color: white;
+        letter-spacing: 4px;
+        padding: 15px;
+     }
+     img.mainPhoto {
+         margin-top:125px;
      }
    
 }

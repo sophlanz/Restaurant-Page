@@ -1,18 +1,4 @@
-//nav stickybar 
- window.onscroll = stickyNav();
-function stickyNav() {
-    //get the bar
-    const nav = document.getElementById("nav");
-    //get the offset top position 
-    const sticky = nav.offsetTop
-    //add sticky class list when offset position is less than
-    //or equal to pageYoffset or else remove it
-        if(window.pageYOffset >= sticky) {
-            nav.classList.add('sticky');
-        } else {
-            nav.classList.remove('sticky');
-        }
-    };
+
 //Open tabs from main page
 function openTab(event,tabName) {
     const tabcontent = document.getElementsByClassName('tabcontent');
@@ -68,7 +54,7 @@ function closeModal(){
 };
 document.getElementById('brunchMenu').click();
 //hamburger toggle
-function myFunction() {
+function hamburgerToggle() {
     //get element
     var x = document.getElementById("myLinks");
     //if it's open close it
@@ -79,3 +65,28 @@ function myFunction() {
       x.style.display = "block";
     };
   };
+function stickyNav () {
+    const nav = document.getElementById("nav");
+    //mobile nav styles
+    const mobileNavStyle = window.getComputedStyle(document.getElementById("topnav"));
+    console.log(mobileNavStyle.display)
+    //mobile nav
+    const mobileNav = document.getElementById("topnav");
+    //check for nav or mobile nav
+    //offset top of nav
+    const offSet = nav.offsetTop
+    if (window.pageYOffset >= offSet) {
+        nav.classList.add("sticky")
+    } else {
+            nav.classList.remove("sticky");
+          };
+    //offset top of nav mobile
+    const offSetMobile = mobileNav.offsetTop
+    if (window.pageYOffset >= offSetMobile) {
+        mobileNav.classList.add("sticky")
+    } else {
+            mobileNav.classList.remove("sticky");
+    }
+};
+//call sticky nav on scroll
+window.onscroll = stickyNav();
