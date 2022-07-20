@@ -1,22 +1,18 @@
-
 //Open tabs from main page
-function openTab(event,tabName) {
-    const tabcontent = document.getElementsByClassName('tabcontent');
-    //hide non-selected tabs
-    for (let i=0; i<tabcontent.length;i++) {
-        tabcontent[i].style.display = "none";
-    }
-    //monitor which tab is showing by removing the active classes of the links
-    const tablinks = document.getElementsByClassName('tablinksactive');
-    for (let i=0; i<tablinks.length;i++) {
-        tablinks[i].className = tablinks[i].className.replace("active", "");
-    }
-    //show the current tap
-    document.getElementById(tabName).style.display = "block";
-    //add an active class to it's tab link
-    event.currentTarget.className += "active";
+ function openTab(event, tabName) {
+     //remove active class
+     event.target.className.replace('tablinksactive', "tablinks");
+     //hide all displays
+     const tabContent = document.querySelectorAll('.tabcontent')
+     for(let i=0; i<tabContent.length;i++){
+         tabContent[i].style.display = "none"
+     };
+     //tab contents already have display set to none, show display of selected tab
+     const newTab = document.getElementById(tabName);
+     newTab.style.display = "block";
     };
-document.getElementById("title").click();
+
+document.getElementById('title').click();
 //Jump in the FAQ page the various sections
 function jump(explanation) {
     const value =  document.getElementById(explanation);
@@ -56,7 +52,7 @@ document.getElementById('brunchMenu').click();
 //hamburger toggle
 function hamburgerToggle() {
     //get element
-    var x = document.getElementById("myLinks");
+    var x = document.getElementById("options");
     //if it's open close it
     if (x.style.display === "block") {
       x.style.display = "none";
@@ -67,12 +63,6 @@ function hamburgerToggle() {
   };
 function stickyNav () {
     const nav = document.getElementById("nav");
-    //mobile nav styles
-    const mobileNavStyle = window.getComputedStyle(document.getElementById("topnav"));
-    console.log(mobileNavStyle.display)
-    //mobile nav
-    const mobileNav = document.getElementById("topnav");
-    //check for nav or mobile nav
     //offset top of nav
     const offSet = nav.offsetTop
     if (window.pageYOffset >= offSet) {
@@ -80,13 +70,6 @@ function stickyNav () {
     } else {
             nav.classList.remove("sticky");
           };
-    //offset top of nav mobile
-    const offSetMobile = mobileNav.offsetTop
-    if (window.pageYOffset >= offSetMobile) {
-        mobileNav.classList.add("sticky")
-    } else {
-            mobileNav.classList.remove("sticky");
-    }
 };
 //call sticky nav on scroll
 window.onscroll = stickyNav();

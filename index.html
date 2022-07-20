@@ -11,31 +11,19 @@
     <div id = "content">
     <!--nav / tabs-->
       <div id ="nav"> 
-        <div id = "title" class = "tablinks" onclick = 'openTab(event, "home")'><strong>SUNDAY</strong>/ <i>in</i>/<strong>BARCELONA</strong></div>
+        <div id = "title" class = "tablinks" onclick = 'openTab(event, "home")'><strong>SUNDAY</strong>/<br> <i>in</i>/<strong>BARCELONA</strong></div>
          <div id = "options">
            <div id = "option" class = "tablinks" onclick = 'openTab(event, "faq")' >FAQ</div>
            <div id = "option" class = "tablinks" onclick = 'openTab(event, "menus")'>MENUS</div>
            <div id = "option" class = "tablinks" onclick = 'openTab(event, "privateevents")'>PRIVATE EVENTS</div>
            <div id = "option" class = "reserveModal" onclick = 'openModal()'>RESERVATIONS</div>
          </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
+        <img src="./images/menu.svg">
+         <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <!--Hamburger nav-->
-     <!-- Top Navigation Menu -->
-<div  id="topnav">
-  <a onclick = 'openTab(event, "home")' class="active"><strong>SUNDAY</strong>/<br> <i>in</i>/<strong>BARCELONA</strong></a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a onclick = 'openTab(event, "faq")'>FAQ</a>
-    <a onclick = 'openTab(event, "menus")'>MENUS</a>
-    <a onclick = 'openTab(event, "privateevents")' >PRIVATE EVENTS</a>
-    <a onclick = 'openModal()'>RESERVATIONS</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
-    <img src="./images/menu.svg">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
     </div>
       <!--tab content-->
       <div id = "tabContents">
