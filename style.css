@@ -517,6 +517,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #footerMobile {
     display:none;
 }
+#nav.sticky{
+    z-index:1;
+}
 
 /*change for mobile view*/
 @media (max-width: 1000px) {
@@ -528,7 +531,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
      #nav {
        overflow:auto;
        background-color: white;
-       position: relative;
+       position: fixed;
        width:100vw;
        display:block;
        text-align:left;
@@ -537,6 +540,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
        height: auto;
        padding-top: 10px;
        padding-bottom: 10px;
+       min-height:140px;
+       line-height:70px;
      }
      /* Hide links in hamburger*/
      #nav #options {
@@ -551,6 +556,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
        text-decoration: none;
        display: block;
      }
+     #nav.nav{
+         position:relative;
+     }
      
      /* hamburger menu*/
      #nav a.icon {
@@ -559,22 +567,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
        display: block;
        position: absolute;
        height:50px;
-       right: 0;
-       top: 0;
+       right: 20px;
+       top: 40px;
        display:block
      }
-     
      #topNav a:hover {
        background-color:white ;
-       
      }
-    
      /*resize fonts*/
      #title {
-         font-size:2.3rem;
-         width:400px;
-         
-         text-align: left;
+        font-size: 3.5rem;
+        width: 450px;
+         text-align: center;
      }
      #hour {
         font-size:1.8rem;
