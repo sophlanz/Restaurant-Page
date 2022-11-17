@@ -163,7 +163,7 @@ img {
     margin-top:50px;
     margin-bottom:50px;
     display:flex;
-    gap:20px;
+    gap:200px;
     justify-content:left;
 }
 #location1, #location2 {
